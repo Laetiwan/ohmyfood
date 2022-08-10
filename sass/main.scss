@@ -1,0 +1,36 @@
+
+
+/*importer dans l'ordre suivant :
+Utils :
+
+    Variables.
+
+    Fonctions.
+
+    Mixins.
+
+    Placeholders.
+
+Feuilles de style de tiers (vendors) (si vous en avez).
+
+Base.
+
+Composants.
+
+Layout.
+
+Pages.
+
+Thèmes.*/
+
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./base/typography";
+@import "./components/buttons";
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/container";
+@import "./layout/form";
+@import "./pages/index";
