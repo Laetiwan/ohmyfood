@@ -1,0 +1,33 @@
+.container-header {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    
+    &__heading {
+        height: 60px;
+        font-family: 'Shrikhand', sans-serif;
+        color: $color-heading;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 200%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        box-shadow: 1px 1px 15px $color-heading-shadow;         
+    }
+    &__form {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-heading-bg-form;
+        &__icon {
+            font-size: 120%;
+            padding-left: 10%;
+        }
+        &__input input {
+            border: none;
+            background-color: $color-heading-bg-form;
+            padding-left: 5%;
+            font-size: 100%;
+        }
+    }
+}
