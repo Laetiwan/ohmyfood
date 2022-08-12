@@ -32,7 +32,9 @@
     }
     &__desc {
         text-align: center;
+        background-color: $color-heading-bg-desc;
         padding-top: 7%;
+        padding-bottom: 15%;
 
         h1 {            
             font-size: 160%;
@@ -50,11 +52,13 @@
         align-items: center;
         justify-content: center;
         margin-top: 7%;
-        
+                
         &__btn {
             @include btn; 
+            box-shadow: 2px 2px 15px $color-heading-shadow;  
             &:hover {
                 background-color: hsl(hue($color-primary), 100%, 70%);
+                box-shadow: 2px 2px 15px darken($color-heading-shadow, 15%);
             }       
             
         }
