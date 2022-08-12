@@ -1,0 +1,11 @@
+@mixin btn {
+    width: 60%;
+    padding: 4%;
+    background: $color-primary;
+    border-radius: 25px;
+    font-size: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 1px 1px 15px $color-heading-shadow;
+}

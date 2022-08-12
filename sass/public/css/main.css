@@ -1,0 +1,110 @@
+@charset "UTF-8";
+.container-header {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.container-header__heading {
+  height: 60px;
+  font-family: "Shrikhand", sans-serif;
+  color: #000000;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 200%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  box-shadow: 1px 1px 15px #c5c4c4;
+}
+.container-header__form {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e0e0;
+}
+.container-header__form__icon {
+  font-size: 110%;
+  padding-left: 10%;
+}
+.container-header__form__input input {
+  border: none;
+  background-color: #e2e0e0;
+  padding-left: 5%;
+  font-size: 100%;
+}
+.container-header__desc {
+  text-align: center;
+  padding-top: 7%;
+}
+.container-header__desc h1 {
+  font-size: 160%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.container-header__desc h2 {
+  font-size: 120%;
+  font-weight: 500;
+}
+.container-header__container-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7%;
+}
+.container-header__container-btn__btn {
+  width: 60%;
+  padding: 4%;
+  background: #9356DC;
+  border-radius: 25px;
+  font-size: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 1px 1px 15px #c5c4c4;
+}
+.container-header__container-btn__btn:hover {
+  background-color: hsl(267.3134328358deg, 100%, 70%);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+}
+
+/*importer dans l'ordre suivant :
+Utils :
+
+    Variables.
+
+    Fonctions.
+
+    Mixins.
+
+    Placeholders.
+
+Feuilles de style de tiers (vendors) (si vous en avez).
+
+Base.
+
+Composants.
+
+Layout.
+
+Pages.
+
+Thèmes.*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -20,7 +20,7 @@
         align-items: center;
         background-color: $color-heading-bg-form;
         &__icon {
-            font-size: 120%;
+            font-size: 110%;
             padding-left: 10%;
         }
         &__input input {
@@ -30,4 +30,35 @@
             font-size: 100%;
         }
     }
+    &__desc {
+        text-align: center;
+        padding-top: 7%;
+
+        h1 {            
+            font-size: 160%;
+            padding-left: 10%;  
+            padding-right: 10%;          
+        }
+
+        h2 {
+            font-size: 120%;
+            font-weight: 500;
+        }        
+    }
+    &__container-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7%;
+        
+        &__btn {
+            @include btn; 
+            &:hover {
+                background-color: hsl(hue($color-primary), 100%, 70%);
+            }       
+            
+        }
+    }
+        
+    
 }
