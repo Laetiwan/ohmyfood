@@ -1,7 +1,46 @@
 @charset "UTF-8";
+.container-header__container-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7%;
+}
+.container-header__container-btn__btn {
+  width: 60%;
+  padding: 4%;
+  background: #9356DC;
+  border-radius: 25px;
+  font-size: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 1px 1px 15px #b1b1b1;
+  box-shadow: 2px 2px 15px #b1b1b1;
+}
+.container-header__container-btn__btn:hover {
+  background-color: hsl(267.3134328358deg, 100%, 70%);
+  box-shadow: 2px 2px 15px #8b8b8b;
+}
+
 .container-header {
   width: 100%;
   font-family: "Roboto", sans-serif;
+  /*&__container-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 7%;
+
+      &__btn {
+          @include btn; 
+          box-shadow: 2px 2px 15px $color-heading-shadow;  
+          &:hover {
+              background-color: hsl(hue($color-primary), 100%, 70%);
+              box-shadow: 2px 2px 15px darken($color-heading-shadow, 15%);
+          }       
+
+      }
+  }*/
 }
 .container-header__heading {
   height: 60px;
@@ -46,28 +85,6 @@
   font-size: 120%;
   font-weight: 500;
 }
-.container-header__container-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 7%;
-}
-.container-header__container-btn__btn {
-  width: 60%;
-  padding: 4%;
-  background: #9356DC;
-  border-radius: 25px;
-  font-size: 100%;
-  color: #ffffff;
-  text-align: center;
-  font-weight: 500;
-  box-shadow: 1px 1px 15px #b1b1b1;
-  box-shadow: 2px 2px 15px #b1b1b1;
-}
-.container-header__container-btn__btn:hover {
-  background-color: hsl(267.3134328358deg, 100%, 70%);
-  box-shadow: 2px 2px 15px #8b8b8b;
-}
 
 html, body {
   height: 100%;
@@ -111,6 +128,29 @@ Thèmes.*/
   box-sizing: border-box;
 }
 
+.container-header__container-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7%;
+}
+.container-header__container-btn__btn {
+  width: 60%;
+  padding: 4%;
+  background: #9356DC;
+  border-radius: 25px;
+  font-size: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 1px 1px 15px #b1b1b1;
+  box-shadow: 2px 2px 15px #b1b1b1;
+}
+.container-header__container-btn__btn:hover {
+  background-color: hsl(267.3134328358deg, 100%, 70%);
+  box-shadow: 2px 2px 15px #8b8b8b;
+}
+
 .guide {
   width: 100%;
   margin-top: 10%;
@@ -123,16 +163,16 @@ Thèmes.*/
 }
 .guide__steps {
   margin-top: 7%;
-  padding-left: 5%;
+  margin-left: 5%;
 }
 .guide__steps__choose, .guide__steps__compose, .guide__steps__eat {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   width: 95%;
-  padding: 6%;
+  padding-top: 6%;
+  padding-bottom: 6%;
   border-radius: 15px;
   font-size: 100%;
-  text-align: center;
   font-weight: 700;
   box-shadow: 1px 1px 15px #b1b1b1;
   margin-bottom: 7%;
@@ -141,6 +181,8 @@ Thèmes.*/
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  left: 5px;
   min-width: 30px;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -151,6 +193,13 @@ Thèmes.*/
 }
 .guide__steps__choose i, .guide__steps__compose i, .guide__steps__eat i {
   font-size: 140%;
+  margin-left: 13%;
+}
+.guide__steps__choose p, .guide__steps__compose p, .guide__steps__eat p {
+  margin-left: 7%;
+}
+.guide__steps .guide__steps__eat {
+  background-color: hsl(267.3134328358deg, 60%, 90%);
 }
 
 /*# sourceMappingURL=main.css.map */
