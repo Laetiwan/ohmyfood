@@ -112,6 +112,7 @@
 .restaurants {
   width: 100%;
   margin-top: 10%;
+  padding-bottom: 10%;
   background-color: #f2f2f2;
 }
 .restaurants__heading {
@@ -128,6 +129,7 @@
   box-shadow: 1px 1px 15px #b1b1b1;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 5%;
 }
 .restaurants__container a {
   text-decoration: none;
@@ -144,14 +146,9 @@
 .restaurants__container .label {
   display: flex;
 }
-.restaurants__container .label:nth-child(1) {
-  flex-direction: column;
-}
-.restaurants__container .label:nth-child(2) {
-  flex-direction: column;
-}
-.restaurants__container .label:nth-child(3) {
-  flex-direction: row;
+.restaurants__container .nom {
+  width: 80%;
+  padding-bottom: 2%;
 }
 .restaurants__container p {
   color: #000000;
@@ -159,9 +156,47 @@
   padding-left: 4%;
   line-height: 27px;
 }
+.restaurants__container .icon {
+  margin-top: 2%;
+  margin-left: 4%;
+}
 .restaurants__container .fa-heart {
-  color: #0065FC;
-  font-size: 90%;
+  color: #9356DC;
+  font-size: 150%;
+}
+
+footer {
+  background-color: #413f3f;
+  color: white;
+  padding-left: 7%;
+  padding-bottom: 10%;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer__heading {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 130%;
+  padding-top: 7%;
+  padding-bottom: 3%;
+}
+
+.footer__propose, .footer__partner {
+  display: flex;
+  align-items: baseline;
+  padding-top: 1%;
+}
+
+.fa-utensils {
+  padding-right: 3%;
+}
+
+.fa-handshake-angle {
+  font-size: 75%;
+  padding-right: 3%;
+}
+
+footer p {
+  padding-top: 3%;
 }
 
 html, body {
@@ -295,6 +330,7 @@ Thèmes.*/
 .restaurants {
   width: 100%;
   margin-top: 10%;
+  padding-bottom: 10%;
   background-color: #f2f2f2;
 }
 .restaurants__heading {
@@ -311,6 +347,7 @@ Thèmes.*/
   box-shadow: 1px 1px 15px #b1b1b1;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 5%;
 }
 .restaurants__container a {
   text-decoration: none;
@@ -327,14 +364,9 @@ Thèmes.*/
 .restaurants__container .label {
   display: flex;
 }
-.restaurants__container .label:nth-child(1) {
-  flex-direction: column;
-}
-.restaurants__container .label:nth-child(2) {
-  flex-direction: column;
-}
-.restaurants__container .label:nth-child(3) {
-  flex-direction: row;
+.restaurants__container .nom {
+  width: 80%;
+  padding-bottom: 2%;
 }
 .restaurants__container p {
   color: #000000;
@@ -342,9 +374,13 @@ Thèmes.*/
   padding-left: 4%;
   line-height: 27px;
 }
+.restaurants__container .icon {
+  margin-top: 2%;
+  margin-left: 4%;
+}
 .restaurants__container .fa-heart {
-  color: #0065FC;
-  font-size: 90%;
+  color: #9356DC;
+  font-size: 150%;
 }
 
 /*# sourceMappingURL=main.css.map */

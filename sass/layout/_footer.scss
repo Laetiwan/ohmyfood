@@ -1,0 +1,28 @@
+footer {
+    background-color: $color-footer-bg;
+    color: white;
+    padding-left: 7%;
+    padding-bottom: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+.footer__heading {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 130%;
+    padding-top: 7%;
+    padding-bottom: 3%;
+}
+.footer__propose, .footer__partner {
+    display: flex;
+    align-items: baseline;
+    padding-top: 1%;        
+}
+.fa-utensils {
+    padding-right: 3%;
+}
+.fa-handshake-angle {
+    font-size: 75%;
+    padding-right: 3%;
+}
+footer p {    
+        padding-top: 3%;   
+} 
