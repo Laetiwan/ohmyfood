@@ -2,7 +2,7 @@
     width: 100%;
     font-family: 'Roboto', sans-serif;
     
-    &__heading {
+    &__heading, &__heading-pages {
         height: 60px;
         font-family: 'Shrikhand', sans-serif;
         color: $color-heading;
@@ -36,6 +36,31 @@
         padding-top: 7%;
         padding-bottom: 15%;
     }
-          
     
+    &__heading-pages {
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        width: 200px;
+        height:170px;      
+        object-fit: cover;   
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding-bottom: 2%;
+
+    }
+    a {
+        margin-left: 5%;
+    }
+    p {
+        margin-left: 17%;
+    }
+    .fa-arrow-left {
+        font-size: 65%;
+        color: black;
+        margin-left: 5%;
+    }
+    
+        
 }
