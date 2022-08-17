@@ -187,21 +187,6 @@
 }
 .restaurants__container {
   margin-top: 7%;
-  /*@keyframes fa-heart {
-      0% { 
-          transition: color margin-bottom ease-in; 
-
-      }
-      25% { 
-          transform: rotate(360deg); 
-      }
-      75% {
-
-      }
-      100% { 
-          transform: translateX(-9999px);           
-      }
-  }*/
 }
 .restaurants__container__card {
   width: 90%;
@@ -257,26 +242,26 @@
 .restaurants__container .icon {
   margin-top: 2%;
   margin-left: 4%;
+  width: 35px;
+  height: 35px;
 }
 .restaurants__container .fa-heart {
   font-size: 150%;
-  animation: 2s linear fa-heart;
-  animation-fill-mode: forwards;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  color: #ffffff;
+  padding-left: 3px;
+  padding-top: 3px;
 }
-.restaurants__container .fa-heart {
-  color: #FFF;
-  background-color: #000;
-  border-radius: 50%;
-  padding: 0.2em;
+.restaurants__container .fa-heart:active {
+  animation: fa-heart 5s;
 }
-.restaurants__container .fa-heart::before {
-  content: "\f004";
-  font-weight: bold;
-  transition: color 1s ease-out;
-}
-.restaurants__container .fa-heart:hover::before {
-  color: red;
-  cursor: pointer;
+@keyframes fa-heart {
+  0% {
+    color: #ffffff;
+  }
+  100% {
+    color: #FF79DA;
+  }
 }
 
 footer {
@@ -501,21 +486,6 @@ Thèmes.*/
 }
 .restaurants__container {
   margin-top: 7%;
-  /*@keyframes fa-heart {
-      0% { 
-          transition: color margin-bottom ease-in; 
-
-      }
-      25% { 
-          transform: rotate(360deg); 
-      }
-      75% {
-
-      }
-      100% { 
-          transform: translateX(-9999px);           
-      }
-  }*/
 }
 .restaurants__container__card {
   width: 90%;
@@ -571,26 +541,26 @@ Thèmes.*/
 .restaurants__container .icon {
   margin-top: 2%;
   margin-left: 4%;
+  width: 35px;
+  height: 35px;
 }
 .restaurants__container .fa-heart {
   font-size: 150%;
-  animation: 2s linear fa-heart;
-  animation-fill-mode: forwards;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  color: #ffffff;
+  padding-left: 3px;
+  padding-top: 3px;
 }
-.restaurants__container .fa-heart {
-  color: #FFF;
-  background-color: #000;
-  border-radius: 50%;
-  padding: 0.2em;
+.restaurants__container .fa-heart:active {
+  animation: fa-heart 5s;
 }
-.restaurants__container .fa-heart::before {
-  content: "\f004";
-  font-weight: bold;
-  transition: color 1s ease-out;
-}
-.restaurants__container .fa-heart:hover::before {
-  color: red;
-  cursor: pointer;
+@keyframes fa-heart {
+  0% {
+    color: #ffffff;
+  }
+  100% {
+    color: #FF79DA;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
