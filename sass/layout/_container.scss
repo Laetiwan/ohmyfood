@@ -16,6 +16,9 @@
         i {
             font-size: 150%;
         }
+        @media (min-width: 768px) {
+            justify-content: center;            
+        }
     }
     &__container-card {
         width: 100%;

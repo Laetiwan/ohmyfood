@@ -4,12 +4,28 @@ footer {
     padding-left: 7%;
     padding-bottom: 10%;
     font-family: 'Roboto', sans-serif;
+    @media (min-width: 768px) {
+        padding-left: 3%;                      
+    }
 }
 .footer__heading {
     font-family: 'Shrikhand', sans-serif;
     font-size: 130%;
     padding-top: 7%;
     padding-bottom: 3%;
+    @media (min-width: 768px) {
+        padding-top: 2%; 
+        padding-bottom: 1%;    
+        font-size: 170%;                 
+    }
+}
+.footer__menu {
+    @media (min-width: 768px) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;                       
+    }     
 }
 footer a {
     text-decoration: none;
@@ -18,15 +34,29 @@ footer a {
 .footer__propose, .footer__partner {
     display: flex;
     align-items: baseline;
-    padding-top: 1%;        
+    padding-top: 1%;  
+    @media (min-width: 768px) {
+        width: 25%;
+    }      
 }
 .fa-utensils {
     padding-right: 3%;
+    @media (min-width: 768px) {
+        font-size: 130%;                      
+    }
 }
 .fa-handshake-angle {
     font-size: 75%;
     padding-right: 3%;
+    @media (min-width: 768px) {
+        font-size: 130%;                      
+    }
 }
 footer p {    
-        padding-top: 3%;   
+        padding-top: 3%; 
+        @media (min-width: 768px) {
+            font-size: 130%;   
+            padding-top: 1%;  
+            padding-right:15%                 
+        }    
 } 

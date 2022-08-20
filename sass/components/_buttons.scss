@@ -3,10 +3,19 @@
     align-items: center;
     justify-content: center;
     margin-top: 7%;
+    @media (min-width: 768px) {
+        width: 20%;
+        margin-top: 25px;
+        align-items: center;
+        justify-content:flex-start;            
+    }
             
     &__btn {
         @include btn; 
         box-shadow: 2px 2px 15px $color-heading-shadow;  
+        @media (min-width: 768px) {
+            font-size: 130%;
+        }
         &:hover {
             background-color: hsl(hue($color-primary), 100%, 70%);
             box-shadow: 2px 2px 15px darken($color-heading-shadow, 15%);

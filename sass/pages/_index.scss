@@ -42,12 +42,25 @@
 .guide {
     width: 100%;
     margin-top: 10%;
+    @media (min-width: 768px) {
+        margin-top: 2%;                    
+    }
     &__heading {
         padding-left: 5%;
+        @media (min-width: 768px) {
+            padding-left: 3%;          
+        }
     }
     &__steps {
         margin-top: 7%;
         margin-left: 5%;
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: start;    
+            align-items: center;  
+            margin-top: 2%;
+            margin-left: 3%;               
+        }
         &__choose, &__compose, &__eat {
             display: flex;
             justify-content: start;
@@ -59,6 +72,14 @@
             font-weight: 700;
             box-shadow: 1px 1px 15px $color-heading-shadow;
             margin-bottom: 7%;
+            @media (min-width: 768px) {
+                width: 25%;   
+                padding-top: 1%;
+                padding-bottom: 1%;
+                margin-right: 5%;
+                font-size: 130%;   
+                margin-bottom: 1%;                            
+            }
             &__number {
                 display: flex;
                 align-items: center;
@@ -72,32 +93,56 @@
                 font-size: 90%;
                 background-color: $color-primary;
                 color: #ffffff;
+                @media (min-width: 768px) {
+                    position: relative;
+                    left: -15px;
+                    min-width: 40px;                                          
+                }
             }
             i {
                 font-size: 140%;
                 margin-left: 13%;
+                @media (min-width: 768px) {
+                    padding-top: 1%;                        
+                }
             }
             p {
                 margin-left: 7%;
+                @media (min-width: 768px) {
+                    padding-top: 1%;                        
+                }
             }            
         }
         .guide__steps__eat {
             background-color: hsl(hue($color-primary),60%,+90%);
         }
-    }
-    
+    }    
 }
 .restaurants {
     width: 100%;
     margin-top: 10%;
     padding-bottom: 10%;
     background-color: $color-heading-bg-desc;
+    @media (min-width: 768px) {
+        margin-top: 2%;     
+        padding-bottom: 2%;                   
+    }
     &__heading {
         padding-left: 5%;
         padding-top: 10%;
+        @media (min-width: 768px) {
+            padding-top: 2%;  
+            padding-left: 3%;                      
+        }
     }
     &__container {
         margin-top: 7%;
+        @media (min-width: 768px) {
+            margin-top: 2%;  
+            display: flex;
+            align-items: center;
+            justify-content: start;                                 
+        }
         &__card {
             width: 90%;      
             background-color: #ffffff;
@@ -106,6 +151,10 @@
             margin-right: auto; 
             margin-left:auto; 
             margin-bottom: 5%;
+            @media (min-width: 768px) {
+                width: 20%;   
+                margin-left:3%;                                          
+            }
             &__images {
                 position: relative;
                 .new {
