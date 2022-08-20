@@ -1,4 +1,4 @@
-.container-header__container-btn {
+.container-header__container-btn, .menu__commander-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +10,10 @@
         &:hover {
             background-color: hsl(hue($color-primary), 100%, 70%);
             box-shadow: 2px 2px 15px darken($color-heading-shadow, 15%);
+            cursor: pointer;
         }       
         
     }
 }
+
+ 

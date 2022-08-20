@@ -1,11 +1,11 @@
 @charset "UTF-8";
-.container-header__container-btn {
+.container-header__container-btn, .menu__commander-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 7%;
 }
-.container-header__container-btn__btn {
+.container-header__container-btn__btn, .menu__commander-btn__btn {
   width: 60%;
   padding: 4%;
   background: #9356DC;
@@ -17,9 +17,10 @@
   box-shadow: 1px 1px 15px #b1b1b1;
   box-shadow: 2px 2px 15px #b1b1b1;
 }
-.container-header__container-btn__btn:hover {
+.container-header__container-btn__btn:hover, .menu__commander-btn__btn:hover {
   background-color: hsl(267.3134328358deg, 100%, 70%);
   box-shadow: 2px 2px 15px #8b8b8b;
+  cursor: pointer;
 }
 
 .container-header {
@@ -255,7 +256,7 @@
   padding-top: 3px;
 }
 .restaurants__container .fa-heart:active {
-  animation: fa-heart 5s;
+  animation: fa-heart 2s;
 }
 @keyframes fa-heart {
   0% {
@@ -377,13 +378,13 @@ Thèmes.*/
   box-sizing: border-box;
 }
 
-.container-header__container-btn {
+.container-header__container-btn, .menu__commander-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 7%;
 }
-.container-header__container-btn__btn {
+.container-header__container-btn__btn, .menu__commander-btn__btn {
   width: 60%;
   padding: 4%;
   background: #9356DC;
@@ -395,9 +396,10 @@ Thèmes.*/
   box-shadow: 1px 1px 15px #b1b1b1;
   box-shadow: 2px 2px 15px #b1b1b1;
 }
-.container-header__container-btn__btn:hover {
+.container-header__container-btn__btn:hover, .menu__commander-btn__btn:hover {
   background-color: hsl(267.3134328358deg, 100%, 70%);
   box-shadow: 2px 2px 15px #8b8b8b;
+  cursor: pointer;
 }
 
 .container-header__heading-img {
@@ -422,44 +424,125 @@ Thèmes.*/
 .menu__container-card {
   width: 100%;
   margin-top: 5%;
+  margin-left: 5%;
 }
-.menu__container-card__entrees__1, .menu__container-card__entrees__2, .menu__container-card__entrees__3, .menu__container-card__plats__1, .menu__container-card__plats__2, .menu__container-card__plats__3, .menu__container-card__desserts__1, .menu__container-card__desserts__2, .menu__container-card__desserts__3 {
-  width: 94%;
+.menu__container-card__entrees__1, .menu__container-card__entrees__2, .menu__container-card__entrees__3, .menu__container-card__entrees__4, .menu__container-card__plats__1, .menu__container-card__plats__2, .menu__container-card__plats__3, .menu__container-card__plats__4, .menu__container-card__desserts__1, .menu__container-card__desserts__2, .menu__container-card__desserts__3, .menu__container-card__desserts__4 {
+  width: 90%;
   height: 70px;
   margin-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-radius: 15px;
   box-shadow: 1px 1px 15px #b1b1b1;
-  animation: 3s linear courses;
+  cursor: pointer;
+  /*@keyframes check {
+      0% {   
+          transform: rotate(180deg);                    
+      }            
+      100% {        
+          transform: rotate(360deg);
+      }
+
+  }*/
 }
-.menu__container-card__entrees__1 .nom-entree, .menu__container-card__entrees__2 .nom-entree, .menu__container-card__entrees__3 .nom-entree, .menu__container-card__plats__1 .nom-entree, .menu__container-card__plats__2 .nom-entree, .menu__container-card__plats__3 .nom-entree, .menu__container-card__desserts__1 .nom-entree, .menu__container-card__desserts__2 .nom-entree, .menu__container-card__desserts__3 .nom-entree {
-  width: 80%;
+.menu__container-card__entrees__1:active, .menu__container-card__entrees__2:active, .menu__container-card__entrees__3:active, .menu__container-card__entrees__4:active, .menu__container-card__plats__1:active, .menu__container-card__plats__2:active, .menu__container-card__plats__3:active, .menu__container-card__plats__4:active, .menu__container-card__desserts__1:active, .menu__container-card__desserts__2:active, .menu__container-card__desserts__3:active, .menu__container-card__desserts__4:active {
+  /*& .fa-circle-check {               
+      animation: check linear 2s;
+      animation-fill-mode:forwards;
+  }*/
 }
-.menu__container-card__entrees__1 .nom-entree p, .menu__container-card__entrees__2 .nom-entree p, .menu__container-card__entrees__3 .nom-entree p, .menu__container-card__plats__1 .nom-entree p, .menu__container-card__plats__2 .nom-entree p, .menu__container-card__plats__3 .nom-entree p, .menu__container-card__desserts__1 .nom-entree p, .menu__container-card__desserts__2 .nom-entree p, .menu__container-card__desserts__3 .nom-entree p {
-  font-size: 115%;
-  line-height: 25px;
+.menu__container-card__entrees__1:active > .prix, .menu__container-card__entrees__2:active > .prix, .menu__container-card__entrees__3:active > .prix, .menu__container-card__entrees__4:active > .prix, .menu__container-card__plats__1:active > .prix, .menu__container-card__plats__2:active > .prix, .menu__container-card__plats__3:active > .prix, .menu__container-card__plats__4:active > .prix, .menu__container-card__desserts__1:active > .prix, .menu__container-card__desserts__2:active > .prix, .menu__container-card__desserts__3:active > .prix, .menu__container-card__desserts__4:active > .prix {
+  animation: prix linear 2s;
+  animation-fill-mode: forwards;
+}
+.menu__container-card__entrees__1:active .coche, .menu__container-card__entrees__2:active .coche, .menu__container-card__entrees__3:active .coche, .menu__container-card__entrees__4:active .coche, .menu__container-card__plats__1:active .coche, .menu__container-card__plats__2:active .coche, .menu__container-card__plats__3:active .coche, .menu__container-card__plats__4:active .coche, .menu__container-card__desserts__1:active .coche, .menu__container-card__desserts__2:active .coche, .menu__container-card__desserts__3:active .coche, .menu__container-card__desserts__4:active .coche {
+  animation: coche linear 2s;
+  animation-fill-mode: forwards;
+}
+.menu__container-card__entrees__1 .nom, .menu__container-card__entrees__2 .nom, .menu__container-card__entrees__3 .nom, .menu__container-card__entrees__4 .nom, .menu__container-card__plats__1 .nom, .menu__container-card__plats__2 .nom, .menu__container-card__plats__3 .nom, .menu__container-card__plats__4 .nom, .menu__container-card__desserts__1 .nom, .menu__container-card__desserts__2 .nom, .menu__container-card__desserts__3 .nom, .menu__container-card__desserts__4 .nom {
+  width: 75%;
+}
+.menu__container-card__entrees__1 .nom p, .menu__container-card__entrees__2 .nom p, .menu__container-card__entrees__3 .nom p, .menu__container-card__entrees__4 .nom p, .menu__container-card__plats__1 .nom p, .menu__container-card__plats__2 .nom p, .menu__container-card__plats__3 .nom p, .menu__container-card__plats__4 .nom p, .menu__container-card__desserts__1 .nom p, .menu__container-card__desserts__2 .nom p, .menu__container-card__desserts__3 .nom p, .menu__container-card__desserts__4 .nom p {
+  font-size: 100%;
+  line-height: 20px;
   padding-left: 5%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__container-card__entrees__1 .prix-entree, .menu__container-card__entrees__2 .prix-entree, .menu__container-card__entrees__3 .prix-entree, .menu__container-card__plats__1 .prix-entree, .menu__container-card__plats__2 .prix-entree, .menu__container-card__plats__3 .prix-entree, .menu__container-card__desserts__1 .prix-entree, .menu__container-card__desserts__2 .prix-entree, .menu__container-card__desserts__3 .prix-entree {
-  width: 20%;
+.menu__container-card__entrees__1 .nom strong, .menu__container-card__entrees__2 .nom strong, .menu__container-card__entrees__3 .nom strong, .menu__container-card__entrees__4 .nom strong, .menu__container-card__plats__1 .nom strong, .menu__container-card__plats__2 .nom strong, .menu__container-card__plats__3 .nom strong, .menu__container-card__plats__4 .nom strong, .menu__container-card__desserts__1 .nom strong, .menu__container-card__desserts__2 .nom strong, .menu__container-card__desserts__3 .nom strong, .menu__container-card__desserts__4 .nom strong {
+  font-size: 100%;
+}
+.menu__container-card__entrees__1 .prix, .menu__container-card__entrees__2 .prix, .menu__container-card__entrees__3 .prix, .menu__container-card__entrees__4 .prix, .menu__container-card__plats__1 .prix, .menu__container-card__plats__2 .prix, .menu__container-card__plats__3 .prix, .menu__container-card__plats__4 .prix, .menu__container-card__desserts__1 .prix, .menu__container-card__desserts__2 .prix, .menu__container-card__desserts__3 .prix, .menu__container-card__desserts__4 .prix {
+  width: 25%;
+  padding-left: 25%;
   padding-top: 6%;
-  text-align: center;
-  font-size: 110%;
+}
+.menu__container-card__entrees__1 .coche, .menu__container-card__entrees__2 .coche, .menu__container-card__entrees__3 .coche, .menu__container-card__entrees__4 .coche, .menu__container-card__plats__1 .coche, .menu__container-card__plats__2 .coche, .menu__container-card__plats__3 .coche, .menu__container-card__plats__4 .coche, .menu__container-card__desserts__1 .coche, .menu__container-card__desserts__2 .coche, .menu__container-card__desserts__3 .coche, .menu__container-card__desserts__4 .coche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 70px;
+  background-color: #99E2D0;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+  left: 70px;
+}
+.menu__container-card__entrees__1 .coche i, .menu__container-card__entrees__2 .coche i, .menu__container-card__entrees__3 .coche i, .menu__container-card__entrees__4 .coche i, .menu__container-card__plats__1 .coche i, .menu__container-card__plats__2 .coche i, .menu__container-card__plats__3 .coche i, .menu__container-card__plats__4 .coche i, .menu__container-card__desserts__1 .coche i, .menu__container-card__desserts__2 .coche i, .menu__container-card__desserts__3 .coche i, .menu__container-card__desserts__4 .coche i {
+  min-width: 25px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 50%;
+}
+.menu__container-card__entrees__1 .coche .fa-circle-check, .menu__container-card__entrees__2 .coche .fa-circle-check, .menu__container-card__entrees__3 .coche .fa-circle-check, .menu__container-card__entrees__4 .coche .fa-circle-check, .menu__container-card__plats__1 .coche .fa-circle-check, .menu__container-card__plats__2 .coche .fa-circle-check, .menu__container-card__plats__3 .coche .fa-circle-check, .menu__container-card__plats__4 .coche .fa-circle-check, .menu__container-card__desserts__1 .coche .fa-circle-check, .menu__container-card__desserts__2 .coche .fa-circle-check, .menu__container-card__desserts__3 .coche .fa-circle-check, .menu__container-card__desserts__4 .coche .fa-circle-check {
+  font-size: 140%;
+  background-color: #99E2D0;
+  color: #ffffff;
+}
+@keyframes prix {
+  100% {
+    margin-right: 17%;
+  }
+}
+@keyframes coche {
+  100% {
+    left: 0;
+    /*transform: translateX(50%);     
+    margin-left: 20%;
+    width: 74%;   
+    color: $color-secondary; */
+  }
+}
+.menu__container-card__entrees {
+  animation: courses ease 5s;
+  animation-fill-mode: forwards;
+}
+.menu__container-card__plats {
+  opacity: 0;
+  animation: courses ease 5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.menu__container-card__desserts {
+  opacity: 0;
+  animation: courses ease 5s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
 }
 @keyframes courses {
   0% {
-    opacity: 0.3;
+    opacity: 0;
   }
   100% {
     opacity: 1;
   }
+}
+.menu .menu__commander-btn__btn {
+  margin-top: 5%;
+  margin-bottom: 15%;
 }
 
 .container-loading-spinner {
@@ -631,7 +714,7 @@ Thèmes.*/
   padding-top: 3px;
 }
 .restaurants__container .fa-heart:active {
-  animation: fa-heart 5s;
+  animation: fa-heart 2s;
 }
 @keyframes fa-heart {
   0% {
