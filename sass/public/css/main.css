@@ -5,12 +5,13 @@
   justify-content: center;
   margin-top: 7%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container-header__container-btn, .menu__commander-btn {
-    width: 20%;
+    width: 30%;
     margin-top: 25px;
     align-items: center;
     justify-content: flex-start;
+    padding-left: 3%;
   }
 }
 .container-header__container-btn__btn, .menu__commander-btn__btn {
@@ -25,7 +26,7 @@
   box-shadow: 1px 1px 15px #b1b1b1;
   box-shadow: 2px 2px 15px #b1b1b1;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container-header__container-btn__btn, .menu__commander-btn__btn {
     font-size: 130%;
   }
@@ -52,7 +53,7 @@
   padding-bottom: 3%;
   box-shadow: 1px 1px 15px #b1b1b1;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container-header__heading, .container-header__heading-pages {
     display: flex;
     justify-content: flex-start;
@@ -74,7 +75,7 @@
   font-size: 110%;
   padding-left: 10%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container-header__form__icon {
     padding-left: 3%;
   }
@@ -85,12 +86,12 @@
   padding-left: 5%;
   font-size: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container-header__form__input input {
     font-size: 120%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container-header__form {
     width: 100%;
     justify-content: flex-start;
@@ -106,7 +107,7 @@
   .container-header__desc {
     text-align: left;
     padding-top: 1%;
-    padding-left: 3%;
+    /*padding-left: 3%; */
     font-size: smaller;
     line-height: 20px;
     padding-bottom: 2%;
@@ -128,7 +129,7 @@
 .container-header a {
   margin-left: 5%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container-header a {
     margin-left: 0;
   }
@@ -136,7 +137,7 @@
 .container-header p {
   margin-left: 20%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container-header p {
     margin-left: 3%;
   }
@@ -146,7 +147,7 @@
   color: black;
   margin-left: 5%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container-header .fa-arrow-left {
     margin-left: 0;
   }
@@ -182,6 +183,12 @@
   animation: 2s linear loading-spinner;
   animation-fill-mode: forwards;
 }
+@media (min-width: 992px) {
+  .loading-spinner {
+    top: 50%;
+    left: 45%;
+  }
+}
 
 @keyframes loading-spinner {
   0% {
@@ -192,14 +199,15 @@
     transform: rotate(360deg);
   }
   100% {
-    transform: translateX(-9999px);
+    /*transform: translateX(-9999px);   */
+    opacity: 0;
   }
 }
 .guide {
   width: 100%;
   margin-top: 10%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide {
     margin-top: 2%;
   }
@@ -207,7 +215,7 @@
 .guide__heading {
   padding-left: 5%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide__heading {
     padding-left: 3%;
   }
@@ -216,7 +224,7 @@
   margin-top: 7%;
   margin-left: 5%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide__steps {
     display: flex;
     justify-content: start;
@@ -237,7 +245,7 @@
   box-shadow: 1px 1px 15px #b1b1b1;
   margin-bottom: 7%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide__steps__choose, .guide__steps__compose, .guide__steps__eat {
     width: 25%;
     padding-top: 1%;
@@ -261,7 +269,7 @@
   background-color: #9356DC;
   color: #ffffff;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide__steps__choose__number, .guide__steps__compose__number, .guide__steps__eat__number {
     position: relative;
     left: -15px;
@@ -272,15 +280,16 @@
   font-size: 140%;
   margin-left: 13%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide__steps__choose i, .guide__steps__compose i, .guide__steps__eat i {
     padding-top: 1%;
+    margin-left: 7%;
   }
 }
 .guide__steps__choose p, .guide__steps__compose p, .guide__steps__eat p {
   margin-left: 7%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide__steps__choose p, .guide__steps__compose p, .guide__steps__eat p {
     padding-top: 1%;
   }
@@ -295,7 +304,7 @@
   padding-bottom: 10%;
   background-color: #f2f2f2;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .restaurants {
     margin-top: 2%;
     padding-bottom: 2%;
@@ -305,7 +314,7 @@
   padding-left: 5%;
   padding-top: 10%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .restaurants__heading {
     padding-top: 2%;
     padding-left: 3%;
@@ -314,7 +323,7 @@
 .restaurants__container {
   margin-top: 7%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .restaurants__container {
     margin-top: 2%;
     display: flex;
@@ -331,7 +340,7 @@
   margin-left: auto;
   margin-bottom: 5%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .restaurants__container__card {
     width: 20%;
     margin-left: 3%;
@@ -411,7 +420,7 @@ footer {
   padding-bottom: 10%;
   font-family: "Roboto", sans-serif;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   footer {
     padding-left: 3%;
   }
@@ -423,7 +432,7 @@ footer {
   padding-top: 7%;
   padding-bottom: 3%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .footer__heading {
     padding-top: 2%;
     padding-bottom: 1%;
@@ -431,12 +440,12 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .footer__menu {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 
@@ -450,7 +459,7 @@ footer a {
   align-items: baseline;
   padding-top: 1%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .footer__propose, .footer__partner {
     width: 25%;
   }
@@ -459,7 +468,7 @@ footer a {
 .fa-utensils {
   padding-right: 3%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .fa-utensils {
     font-size: 130%;
   }
@@ -469,7 +478,7 @@ footer a {
   font-size: 75%;
   padding-right: 3%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .fa-handshake-angle {
     font-size: 130%;
   }
@@ -478,7 +487,7 @@ footer a {
 footer p {
   padding-top: 3%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   footer p {
     font-size: 130%;
     padding-top: 1%;
@@ -503,10 +512,20 @@ main {
 h1 {
   font-size: 160%;
 }
+@media (min-width: 992px) {
+  h1 {
+    padding-left: 3%;
+  }
+}
 
 h2 {
   font-size: 120%;
   font-weight: 500;
+}
+@media (min-width: 992px) {
+  h2 {
+    padding-left: 3%;
+  }
 }
 
 h3 {
@@ -517,6 +536,11 @@ h4 {
   font-size: 160%;
   font-family: "Shrikhand", sans-serif;
 }
+@media (min-width: 992px) {
+  h4 {
+    font-size: 200%;
+  }
+}
 
 h5 {
   width: 12%;
@@ -526,6 +550,14 @@ h5 {
   margin-bottom: 3%;
   margin-top: 10%;
   padding-bottom: 2%;
+}
+@media (min-width: 992px) {
+  h5 {
+    margin-top: 3%;
+    padding-bottom: 5px;
+    width: 3%;
+    font-size: 130%;
+  }
 }
 
 /*importer dans l'ordre suivant :
@@ -562,12 +594,13 @@ Thèmes.*/
   justify-content: center;
   margin-top: 7%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container-header__container-btn, .menu__commander-btn {
-    width: 20%;
+    width: 30%;
     margin-top: 25px;
     align-items: center;
     justify-content: flex-start;
+    padding-left: 3%;
   }
 }
 .container-header__container-btn__btn, .menu__commander-btn__btn {
@@ -582,7 +615,7 @@ Thèmes.*/
   box-shadow: 1px 1px 15px #b1b1b1;
   box-shadow: 2px 2px 15px #b1b1b1;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container-header__container-btn__btn, .menu__commander-btn__btn {
     font-size: 130%;
   }
@@ -612,7 +645,13 @@ Thèmes.*/
 .menu__heading i {
   font-size: 150%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  .menu__heading i {
+    padding-left: 2%;
+    font-size: 190%;
+  }
+}
+@media (min-width: 992px) {
   .menu__heading {
     justify-content: center;
   }
@@ -620,7 +659,12 @@ Thèmes.*/
 .menu__container-card {
   width: 100%;
   margin-top: 5%;
-  margin-left: 5%;
+  margin-left: 3%;
+}
+@media (min-width: 992px) {
+  .menu__container-card {
+    margin-top: 2%;
+  }
 }
 .menu__container-card__entrees__1, .menu__container-card__entrees__2, .menu__container-card__entrees__3, .menu__container-card__entrees__4, .menu__container-card__plats__1, .menu__container-card__plats__2, .menu__container-card__plats__3, .menu__container-card__plats__4, .menu__container-card__desserts__1, .menu__container-card__desserts__2, .menu__container-card__desserts__3, .menu__container-card__desserts__4 {
   width: 90%;
@@ -632,15 +676,13 @@ Thèmes.*/
   border-radius: 15px;
   box-shadow: 1px 1px 15px #b1b1b1;
   cursor: pointer;
-  /*@keyframes check {
-      0% {   
-          transform: rotate(180deg);                    
-      }            
-      100% {        
-          transform: rotate(360deg);
-      }
-
-  }*/
+}
+@media (min-width: 992px) {
+  .menu__container-card__entrees__1, .menu__container-card__entrees__2, .menu__container-card__entrees__3, .menu__container-card__entrees__4, .menu__container-card__plats__1, .menu__container-card__plats__2, .menu__container-card__plats__3, .menu__container-card__plats__4, .menu__container-card__desserts__1, .menu__container-card__desserts__2, .menu__container-card__desserts__3, .menu__container-card__desserts__4 {
+    margin-top: 2%;
+    width: 50%;
+    height: 100px;
+  }
 }
 .menu__container-card__entrees__1:active, .menu__container-card__entrees__2:active, .menu__container-card__entrees__3:active, .menu__container-card__entrees__4:active, .menu__container-card__plats__1:active, .menu__container-card__plats__2:active, .menu__container-card__plats__3:active, .menu__container-card__plats__4:active, .menu__container-card__desserts__1:active, .menu__container-card__desserts__2:active, .menu__container-card__desserts__3:active, .menu__container-card__desserts__4:active {
   /*& .fa-circle-check {               
@@ -667,6 +709,12 @@ Thèmes.*/
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media (min-width: 992px) {
+  .menu__container-card__entrees__1 .nom p, .menu__container-card__entrees__2 .nom p, .menu__container-card__entrees__3 .nom p, .menu__container-card__entrees__4 .nom p, .menu__container-card__plats__1 .nom p, .menu__container-card__plats__2 .nom p, .menu__container-card__plats__3 .nom p, .menu__container-card__plats__4 .nom p, .menu__container-card__desserts__1 .nom p, .menu__container-card__desserts__2 .nom p, .menu__container-card__desserts__3 .nom p, .menu__container-card__desserts__4 .nom p {
+    font-size: 130%;
+    line-height: 25px;
+  }
+}
 .menu__container-card__entrees__1 .nom strong, .menu__container-card__entrees__2 .nom strong, .menu__container-card__entrees__3 .nom strong, .menu__container-card__entrees__4 .nom strong, .menu__container-card__plats__1 .nom strong, .menu__container-card__plats__2 .nom strong, .menu__container-card__plats__3 .nom strong, .menu__container-card__plats__4 .nom strong, .menu__container-card__desserts__1 .nom strong, .menu__container-card__desserts__2 .nom strong, .menu__container-card__desserts__3 .nom strong, .menu__container-card__desserts__4 .nom strong {
   font-size: 100%;
 }
@@ -674,6 +722,12 @@ Thèmes.*/
   width: 25%;
   padding-left: 25%;
   padding-top: 6%;
+}
+@media (min-width: 992px) {
+  .menu__container-card__entrees__1 .prix, .menu__container-card__entrees__2 .prix, .menu__container-card__entrees__3 .prix, .menu__container-card__entrees__4 .prix, .menu__container-card__plats__1 .prix, .menu__container-card__plats__2 .prix, .menu__container-card__plats__3 .prix, .menu__container-card__plats__4 .prix, .menu__container-card__desserts__1 .prix, .menu__container-card__desserts__2 .prix, .menu__container-card__desserts__3 .prix, .menu__container-card__desserts__4 .prix {
+    font-size: 120%;
+    padding-top: 4%;
+  }
 }
 .menu__container-card__entrees__1 .coche, .menu__container-card__entrees__2 .coche, .menu__container-card__entrees__3 .coche, .menu__container-card__entrees__4 .coche, .menu__container-card__plats__1 .coche, .menu__container-card__plats__2 .coche, .menu__container-card__plats__3 .coche, .menu__container-card__plats__4 .coche, .menu__container-card__desserts__1 .coche, .menu__container-card__desserts__2 .coche, .menu__container-card__desserts__3 .coche, .menu__container-card__desserts__4 .coche {
   display: flex;
@@ -706,10 +760,6 @@ Thèmes.*/
 @keyframes coche {
   100% {
     left: 0;
-    /*transform: translateX(50%);     
-    margin-left: 20%;
-    width: 74%;   
-    color: $color-secondary; */
   }
 }
 .menu__container-card__entrees {
@@ -771,6 +821,12 @@ Thèmes.*/
   animation: 2s linear loading-spinner;
   animation-fill-mode: forwards;
 }
+@media (min-width: 992px) {
+  .loading-spinner {
+    top: 50%;
+    left: 45%;
+  }
+}
 
 @keyframes loading-spinner {
   0% {
@@ -781,14 +837,15 @@ Thèmes.*/
     transform: rotate(360deg);
   }
   100% {
-    transform: translateX(-9999px);
+    /*transform: translateX(-9999px);   */
+    opacity: 0;
   }
 }
 .guide {
   width: 100%;
   margin-top: 10%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide {
     margin-top: 2%;
   }
@@ -796,7 +853,7 @@ Thèmes.*/
 .guide__heading {
   padding-left: 5%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide__heading {
     padding-left: 3%;
   }
@@ -805,7 +862,7 @@ Thèmes.*/
   margin-top: 7%;
   margin-left: 5%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide__steps {
     display: flex;
     justify-content: start;
@@ -826,7 +883,7 @@ Thèmes.*/
   box-shadow: 1px 1px 15px #b1b1b1;
   margin-bottom: 7%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide__steps__choose, .guide__steps__compose, .guide__steps__eat {
     width: 25%;
     padding-top: 1%;
@@ -850,7 +907,7 @@ Thèmes.*/
   background-color: #9356DC;
   color: #ffffff;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide__steps__choose__number, .guide__steps__compose__number, .guide__steps__eat__number {
     position: relative;
     left: -15px;
@@ -861,15 +918,16 @@ Thèmes.*/
   font-size: 140%;
   margin-left: 13%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide__steps__choose i, .guide__steps__compose i, .guide__steps__eat i {
     padding-top: 1%;
+    margin-left: 7%;
   }
 }
 .guide__steps__choose p, .guide__steps__compose p, .guide__steps__eat p {
   margin-left: 7%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .guide__steps__choose p, .guide__steps__compose p, .guide__steps__eat p {
     padding-top: 1%;
   }
@@ -884,7 +942,7 @@ Thèmes.*/
   padding-bottom: 10%;
   background-color: #f2f2f2;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .restaurants {
     margin-top: 2%;
     padding-bottom: 2%;
@@ -894,7 +952,7 @@ Thèmes.*/
   padding-left: 5%;
   padding-top: 10%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .restaurants__heading {
     padding-top: 2%;
     padding-left: 3%;
@@ -903,7 +961,7 @@ Thèmes.*/
 .restaurants__container {
   margin-top: 7%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .restaurants__container {
     margin-top: 2%;
     display: flex;
@@ -920,7 +978,7 @@ Thèmes.*/
   margin-left: auto;
   margin-bottom: 5%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .restaurants__container__card {
     width: 20%;
     margin-left: 3%;
