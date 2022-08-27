@@ -10,12 +10,23 @@
         justify-content:flex-start;  
         padding-left: 3%;
     }
+    @media (min-width: 769px) and (max-width: 991px) {
+        width: 50%;
+        margin-top: 25px;
+        align-items: center;
+        justify-content:flex-start;  
+        padding-left: 3%; 
+        padding-bottom: 2%;
+    }
             
     &__btn {
         @include btn; 
         box-shadow: 2px 2px 15px $color-heading-shadow;  
         @media (min-width: 992px) {
             font-size: 130%;
+        }
+        @media (min-width: 769px) and (max-width: 991px) {
+            font-size: 120%;
         }
         &:hover {
             background-color: hsl(hue($color-primary), 100%, 70%);

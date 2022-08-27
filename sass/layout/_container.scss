@@ -27,7 +27,7 @@
     &__container-card {
         width: 100%;
         margin-top: 5%;
-        margin-left: 3%;
+        margin-left: 5%;
         @media (min-width: 992px) {
             margin-top: 2%;            
         }
@@ -50,58 +50,113 @@
 
                 &:active {     
                     & > .prix {               
-                        animation: prix linear 2s;
+                        animation: prix ease 500ms;
                         animation-fill-mode:forwards;
                     }
-                    & .coche {
-                        animation: coche linear 2s;
+                    & > .coche {
+                        animation: coche linear 500ms;
                         animation-fill-mode:forwards;
+                        .fa-circle-check {               
+                            animation: check linear 500ms;
+                            animation-fill-mode:forwards;
+                        }
                     }
-
-                    /*& .fa-circle-check {               
-                        animation: check linear 2s;
-                        animation-fill-mode:forwards;
-                    }*/
-                   
-                }
-                                
+                }                                
                 .nom {
-                   width: 75%;                   
-                    p {
-                        font-size: 100%;                           
-                        line-height: 20px;
-                        padding-left: 5%;
+                    width: 65%;  
+                    padding-left: 5%;
+                    line-height: 25px;  
+                    strong {
+                        font-size: 100%; 
                         white-space: nowrap;
                         overflow:hidden;
                         text-overflow: ellipsis;
+                    } 
+                    p {
+                        font-size: 85%;   
+                        white-space: nowrap;
+                        overflow:hidden;
+                        text-overflow: ellipsis; 
+
                         @media (min-width: 992px) {
-                            font-size: 130%;    
-                            line-height: 25px;       
+                            font-size: 130%; 
                         }
                     }
-                    strong {
-                        font-size: 100%;
-                    }
                 }   
-                .prix {
-                    width: 25%;
-                    padding-left: 25%;
-                    padding-top: 6%;
-                    @media (min-width: 992px) {
-                        font-size: 120%; 
-                        padding-top: 4%;
-                    }
-                }                    
-                .coche {
+                .prix {                    
+                    width: 12%;                                         
+                    padding-top: 8%;
+                    padding-left: 10%;
+                    font-size: 100%;
+                    font-weight: bold;
+                }
+               .coche {
+                    opacity: 0;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 100px;
+                    width: 12%;
+                    height: 70px;
+                    background-color: $color-tertiary;
+                    border-bottom-right-radius: 15px;
+                    border-top-right-radius: 15px;
+                    i {
+                        min-width: 25px;
+                        padding-top: 2%;
+                        padding-bottom: 2%;    
+                        border-radius: 50%;
+                    }
+                    .fa-circle-check {
+                        font-size: 140%;
+                        font-weight: bold;
+                        background-color: $color-tertiary;
+                        color: #ffffff;
+                    }
+                }  
+                @keyframes prix {
+                    0% {                                        
+                    }   
+                    100% {   
+                        margin-right: 10%;
+                    }                    
+                } 
+                @keyframes coche {
+                    0% { 
+                        opacity: 1;                           
+                        width: 1px;                  
+                    } 
+                    100% {  
+                        opacity: 1;
+                        width: 50px;
+                        }
+                }  
+                @keyframes check {
+                    0% { 
+                        transform: rotate(0deg);                  
+                    } 
+                    100% {  
+                        transform: rotate(360deg);
+                        }
+                }            
+            }
+                
+                /*    @media (min-width: 992px) {
+                        font-size: 120%; 
+                        padding-top: 4%;
+                    }*/
+        }        
+                   
+
+                /*.coche {
+                    visibility: collapse;
+                    justify-content: center;
+                    align-items: center;
+                    width: 60px;
                     height: 70px;
                     background-color: $color-tertiary;
                     border-bottom-right-radius: 15px;
                     border-top-right-radius: 15px;                    
-                    position: relative;
+                    /*position: relative;
 	                left: 70px;
                     i {
                         min-width: 25px; 
@@ -111,28 +166,13 @@
                     }
                     .fa-circle-check {
                         font-size: 140%;
+                        font-weight: bold;
                         background-color: $color-tertiary;
                         color: #ffffff;
                     }
-                }
-                @keyframes prix {
-                    0% {   
-                                             
-                    }            
-                    100% {        
-                        margin-right: 17%;
-                    }
-                    
-                }
-                @keyframes coche {
-                    0% {                            
-                                             
-                    }            
-                    100% {        
-                        left:0;}
-                }
-               }           
-        }
+                }  */              
+                
+                         
         &__entrees {
             animation: courses ease 5s;
             animation-fill-mode:forwards;

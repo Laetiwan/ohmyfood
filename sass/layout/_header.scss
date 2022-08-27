@@ -1,8 +1,6 @@
 .container-header {
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    z-index: 2;
-    
     &__heading, &__heading-pages {
         height: 60px;
         font-family: 'Shrikhand', sans-serif;
@@ -12,12 +10,21 @@
         font-size: 180%;
         padding-top: 3%;
         padding-bottom: 3%;
-        box-shadow: 1px 1px 15px $color-heading-shadow; 
+        box-shadow: 1px 1px 15px $color-heading-shadow;
         @media (min-width: 992px) {
             display: flex;
             justify-content:flex-start;
             align-items: center;
             font-size: 250%;
+            padding-left: 3%;
+            box-shadow:none;
+            border-bottom: 2px solid $color-primary;                  
+        }
+        @media (min-width: 769px) and (max-width: 991px) {
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+            font-size: 200%;
             padding-left: 3%;
             box-shadow:none;
             border-bottom: 2px solid $color-primary;                  
@@ -35,6 +42,9 @@
             @media (min-width: 992px) {
                 padding-left: 3%;                
             }
+            @media (min-width: 769px) and (max-width: 991px) {
+                padding-left: 3%;
+            } 
         }
         &__input input {
             border: none;
@@ -49,6 +59,10 @@
             width: 100%;
             justify-content:flex-start;            
         }
+        @media (min-width: 769px) and (max-width: 991px) {
+            width: 100%;
+            justify-content:flex-start; 
+        }
     }
     &__desc {
         text-align: center;
@@ -57,8 +71,7 @@
         padding-bottom: 15%;
         @media (min-width: 768px) {
             text-align: left;    
-            padding-top: 1%;  
-            /*padding-left: 3%; */
+            padding-top: 1%; 
             font-size: smaller;
             line-height: 20px;
             padding-bottom: 2%;            
