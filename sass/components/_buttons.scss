@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 7%;
+    
     @media (min-width: 992px) {
         width: 30%;
         margin-top: 25px;
@@ -11,7 +12,7 @@
         padding-left: 3%;
     }
     @media (min-width: 769px) and (max-width: 991px) {
-        width: 50%;
+        width: 60%;
         margin-top: 25px;
         align-items: center;
         justify-content:flex-start;  
@@ -21,9 +22,11 @@
             
     &__btn {
         @include btn; 
+        width: 70%;
         box-shadow: 2px 2px 15px $color-heading-shadow;  
         @media (min-width: 992px) {
-            font-size: 130%;
+            font-size: 130%; 
+            width: 80%;           
         }
         @media (min-width: 769px) and (max-width: 991px) {
             font-size: 120%;

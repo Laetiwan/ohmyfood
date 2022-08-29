@@ -9,13 +9,13 @@
         vertical-align: middle;
         font-size: 180%;
         padding-top: 3%;
-        padding-bottom: 3%;
-        box-shadow: 1px 1px 15px $color-heading-shadow;
+        padding-bottom: 3%;        
+                
         @media (min-width: 992px) {
             display: flex;
             justify-content:flex-start;
             align-items: center;
-            font-size: 250%;
+            font-size: 240%;
             padding-left: 3%;
             box-shadow:none;
             border-bottom: 2px solid $color-primary;                  
@@ -36,6 +36,8 @@
         justify-content: center;
         align-items: center;
         background-color: $color-heading-bg-form;
+        box-shadow: 0px 2px 3px $color-heading-shadow inset;
+        
         &__icon {
             font-size: 110%;
             padding-left: 10%;
