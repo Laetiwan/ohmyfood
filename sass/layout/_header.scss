@@ -15,19 +15,15 @@
             display: flex;
             justify-content:flex-start;
             align-items: center;
-            font-size: 240%;
-            padding-left: 3%;
-            box-shadow:none;
-            border-bottom: 2px solid $color-primary;                  
+            font-size: 230%;
+            padding-left: 3%;                              
         }
         @media (min-width: 769px) and (max-width: 991px) {
             display: flex;
             justify-content:flex-start;
             align-items: center;
             font-size: 200%;
-            padding-left: 3%;
-            box-shadow:none;
-            border-bottom: 2px solid $color-primary;                  
+            padding-left: 3%;                              
         }        
     }
     &__form {
@@ -72,7 +68,7 @@
         padding-top: 7%;
         padding-bottom: 15%;
         @media (min-width: 768px) {
-            text-align: left;    
+            text-align: center;    
             padding-top: 1%; 
             font-size: smaller;
             line-height: 20px;

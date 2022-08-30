@@ -1,13 +1,12 @@
 .container-loading-spinner {
     width: 100%;
-    background-color: #ffffff;   
-    z-index: 1;
+    background-color: #ffffff;  
     animation: 3s linear container-loading-spinner; 
 }
 @keyframes container-loading-spinner {
     0% { 
         opacity: 0.1; 
-        pointer-events: none;       
+        pointer-events: none;    
     }
     100% { 
         opacity: 1;           
@@ -23,25 +22,24 @@
     border-top: 10px solid $color-secondary;
     border-bottom: 10px solid $color-tertiary;
     border-radius: 50%;
-    z-index: 2;
     overflow: hidden;    
     animation: 2s linear loading-spinner;
     animation-fill-mode:forwards;    
     @media (min-width: 992px) {
         top: 50%;
-        left: 45%;            
+        left: 48%;            
     }
 }
 @keyframes loading-spinner {
     0% { 
-        transform: rotate(0deg); 
-        opacity :1;        
+        transform: rotate(0deg);    
+        opacity :1;   
     }
     95% { 
         transform: rotate(360deg); 
+        opacity :0.5;
     }
     100% { 
-        /*transform: translateX(-9999px);   */
         opacity :0;        
     }
 }
@@ -65,7 +63,7 @@
         margin-left: 5%;
         @media (min-width: 992px) {
             display: flex;
-            justify-content: start;    
+            justify-content: space-between;    
             align-items: center;  
             margin-top: 2%;
             margin-left: 3%;               
@@ -80,7 +78,9 @@
         &__choose, &__compose, &__eat {
             display: flex;
             justify-content: start;
+            align-items: center;
             width: 95%;
+            height: 60px;
             padding-top: 6%;
             padding-bottom: 6%;
             border-radius: 15px;
@@ -93,7 +93,7 @@
                 padding-top: 1%;
                 padding-bottom: 1%;
                 margin-right: 5%;
-                font-size: 100%;   
+                font-size: 120%;   
                 margin-bottom: 1%;                            
             }
             @media (min-width: 769px) and (max-width: 991px) {
@@ -122,7 +122,9 @@
                 @media (min-width: 992px) {
                     position: relative;
                     left: -15px;
-                    min-width: 40px;                                          
+                    min-width: 45px;     
+                    padding-top: 3px;
+                    padding-bottom: 3px;                                     
                 }
             }
             i {
@@ -218,7 +220,7 @@
             padding-bottom: 2%;
         }
         .label {
-            display: flex;            
+            display: flex; 
         }
         .nom {
             width: 80%;
@@ -226,9 +228,9 @@
         }
         p {
             color:#000000;
-            font-size: 120%;
+            font-size: 110%;
             padding-left: 4%;
-            line-height: 27px;
+            line-height: 10px;
         }
         .icon {
             margin-top: 2%;
