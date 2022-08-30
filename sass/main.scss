@@ -61,5 +61,10 @@ h5 {
     margin-left: 45%;
     margin-right: auto;
   }
+  @media (min-width: 769px) and (max-width: 991px) {
+    margin-top: 3%;  
+    padding-bottom: 5px;    
+    width: 5%;  
+  }
 }
 

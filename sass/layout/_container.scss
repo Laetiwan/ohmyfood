@@ -7,19 +7,26 @@
         z-index:1;
     }
 }
+main {
+    z-index:2;
+}
+section {
+    z-index:2;
+}
 .menu {
     width: 100%;
+    z-index:2;
     &__heading {
         display: flex;
         justify-content: space-around;
         align-items: center;
         height:60px;
-        @media (min-width: 992px) {
+        @media (min-width: 768px) {
             justify-content: center;
         }
         i {
             font-size: 150%;
-            @media (min-width: 992px) {
+            @media (min-width: 768px) {
                 padding-left: 2%;  
                 font-size: 190%;     
             }
@@ -27,7 +34,6 @@
     }
     &__container-card {
         width: 100%;
-        /*margin-top: 5%;*/
         margin-left: 5%; 
         @media (min-width: 992px) {
             width: 80%;            
@@ -53,6 +59,11 @@
                     margin-left: auto;
                     margin-right: auto;
                 }
+                @media (min-width: 768px) and (max-width: 991px) {
+                    margin-top: 2%;
+                    width: 60%;  
+                    height: 80px; 
+                }
 
                 &:active {     
                     & > .prix {               
@@ -72,12 +83,18 @@
                     width: 65%;  
                     padding-left: 5%;
                     line-height: 25px;  
+                    @media (min-width: 992px) {
+                        width: 50%;
+                    }
                     strong {
                         font-size: 120%; 
                         margin: 0;
                         white-space: nowrap;
                         overflow:hidden;
                         text-overflow: ellipsis;
+                        @media (min-width: 992px) {
+                            font-size: 110%;
+                        }
                     } 
                     p {
                         font-size: 85%;   
@@ -87,9 +104,8 @@
                         text-overflow: ellipsis; 
 
                         @media (min-width: 992px) {
-                            font-size: 130%;
-                            margin-top: -1px;
-                            margin-bottom: -1px;                            
+                            font-size: 110%;
+                                                       
                         }
                     }
                 }   
@@ -100,10 +116,13 @@
                     font-size: 100%;
                     font-weight: bold;
                     @media (min-width: 992px) {
-                        font-size: 120%; 
+                        font-size: 110%; 
                         padding-top: 4%;
-                        padding-left: 25%;
-                    }                    
+                        padding-left: 35%;
+                    }      
+                    @media (min-width: 768px) and (max-width: 991px) {
+                        padding-top: 6%; 
+                    }              
                 }
                .coche {
                     opacity: 0;
@@ -117,6 +136,9 @@
                     border-top-right-radius: 15px;
                     @media (min-width: 992px) {
                         height: 100px;
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) {
+                        height: 80px;
                     }
                     i {
                         min-width: 25px;

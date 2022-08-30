@@ -8,43 +8,69 @@ footer {
         height: 120px;
         padding-left: 3%;                     
     }
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding-bottom: 5%;                        
+    }
 }
 .footer__heading {
     font-family: 'Shrikhand', sans-serif;
     font-size: 130%;
     padding-top: 7%;
-    /*padding-bottom: 3%;*/
+    padding-bottom: 5%;
     @media (min-width: 992px) {
-        padding-top: 1%; 
-        padding-bottom: 1%;    
+        padding-top: 1%;
+        padding-bottom: 1%;
         font-size: 140%;                 
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding-top: 2%;
+        padding-bottom: 1%;
+        font-size: 140%;                        
     }
 }
 .footer__menu {
     @media (min-width: 992px) {
-        width: 100%;
+        width: 95%;
         display: flex;
-        align-items: center;
+        align-items:baseline;
         justify-content: space-between;                       
     }     
-}
-footer a {
-    text-decoration: none;
-    color: white;
 }
 .footer__propose, .footer__partner {
     display: flex;
     align-items: baseline;
-    /*padding-top: 1px;  */
-    height:30px;
     @media (min-width: 992px) {
         width: 20%;        
     }      
+}
+.footer__mention {    
+    padding-top: 1%;
+    @media (min-width: 992px) {
+        font-size: 100%;   
+        padding-right:15%;  
+        margin-top: 0;                           
+    }
+} 
+.footer__contact {    
+    padding-top: 2%;
+    @media (min-width: 992px) {
+        padding-top: 1%;                                 
+    }    
+} 
+p {
+    margin: 1%;
+}
+a {
+    text-decoration: none;
+    color: white;
 }
 .fa-utensils {
     padding-right: 3%;
     @media (min-width: 992px) {
         font-size: 110%;                      
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding-right: 1%;                      
     }
 }
 .fa-handshake-angle {
@@ -53,20 +79,8 @@ footer a {
     @media (min-width: 992px) {
         font-size: 110%;                      
     }
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding-right: 1%;                      
+    }
 }
-.footer__mention {    
-        margin-top: 5%; 
-        height:30px;
-        @media (min-width: 992px) {
-            font-size: 100%;   
-            padding-top: 1%;  
-            padding-right:15%;                             
-        }    
-} 
-.footer__contact {    
-    /*padding-top: 1%;*/
-    height:30px; 
-    @media (min-width: 992px) {
-                                     
-    }    
-} 
+
