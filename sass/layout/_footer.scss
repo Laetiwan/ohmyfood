@@ -36,14 +36,14 @@ footer {
         justify-content: space-between;                       
     }     
 }
-.footer__propose, .footer__partner {
+.footer__menu .propose, .footer__menu .partner {
     display: flex;
     align-items: baseline;
     @media (min-width: 992px) {
         width: 20%;        
     }      
 }
-.footer__mention {    
+.footer__menu .mention {    
     padding-top: 1%;
     @media (min-width: 992px) {
         font-size: 100%;   
@@ -51,20 +51,20 @@ footer {
         margin-top: 0;                           
     }
 } 
-.footer__contact {    
+.footer__menu .contact {    
     padding-top: 2%;
     @media (min-width: 992px) {
         padding-top: 1%;                                 
     }    
 } 
-p {
+.footer__menu p {
     margin: 1%;
 }
-a {
+.footer__menu a {
     text-decoration: none;
     color: white;
 }
-.fa-utensils {
+.footer__menu .fa-utensils {
     padding-right: 3%;
     @media (min-width: 992px) {
         font-size: 110%;                      
@@ -73,7 +73,7 @@ a {
         padding-right: 1%;                      
     }
 }
-.fa-handshake-angle {
+.footer__menu .fa-handshake-angle {
     font-size: 75%;
     padding-right: 3%;
     @media (min-width: 992px) {

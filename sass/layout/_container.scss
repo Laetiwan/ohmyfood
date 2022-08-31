@@ -1,21 +1,13 @@
 .container-header__heading-img {
-    width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    
-    img {
-        z-index:1;
-    }
-}
-main {
-    z-index:2;
-}
-section {
-    z-index:2;
+    width: 100%; 
 }
 .menu {
-    width: 100%;
-    z-index:2;
+    z-index: 2;
+    position: relative;        
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: 15px solid #ffffff;
+        
     &__heading {
         display: flex;
         justify-content: space-around;

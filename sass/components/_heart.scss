@@ -1,0 +1,26 @@
+.restaurants {
+    .label .icon {
+        margin-top: 2%;
+        margin-left:4%;
+        width: 35px;
+        height : 35px;
+    }
+    .label .icon .fa-heart {
+        font-size : 150%;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        color: #ffffff;
+        padding-left: 3px;
+        padding-top: 3px;            
+        &:active {
+            animation: fa-heart 2s;                
+        }            
+    }
+    @keyframes fa-heart {
+        0% { 
+            color: #ffffff;                       
+        }            
+        100% {                 
+            color: $color-secondary;       
+        }
+    }
+}

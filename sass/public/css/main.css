@@ -1,11 +1,11 @@
-.container-header__container-btn, .menu__commander-btn {
+.container__btn, .menu__commander-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 7%;
 }
 @media (min-width: 992px) {
-  .container-header__container-btn, .menu__commander-btn {
+  .container__btn, .menu__commander-btn {
     width: 30%;
     margin-top: 25px;
     align-items: center;
@@ -15,7 +15,7 @@
   }
 }
 @media (min-width: 769px) and (max-width: 991px) {
-  .container-header__container-btn, .menu__commander-btn {
+  .container__btn, .menu__commander-btn {
     width: 60%;
     margin-top: 25px;
     align-items: center;
@@ -25,7 +25,7 @@
     margin-left: 30%;
   }
 }
-.container-header__container-btn__btn, .menu__commander-btn__btn {
+.container__btn .main-button, .menu__commander-btn .main-button {
   width: 100%;
   padding: 4%;
   background: #9356DC;
@@ -39,39 +39,44 @@
   box-shadow: 2px 2px 15px #bdbcbc;
 }
 @media (min-width: 992px) {
-  .container-header__container-btn__btn, .menu__commander-btn__btn {
+  .container__btn .main-button, .menu__commander-btn .main-button {
     font-size: 130%;
     width: 80%;
   }
 }
 @media (min-width: 769px) and (max-width: 991px) {
-  .container-header__container-btn__btn, .menu__commander-btn__btn {
+  .container__btn .main-button, .menu__commander-btn .main-button {
     font-size: 120%;
   }
 }
-.container-header__container-btn__btn:hover, .menu__commander-btn__btn:hover {
+.container__btn .main-button:hover, .menu__commander-btn .main-button:hover {
   background-color: hsl(267.3134328358deg, 100%, 70%);
   box-shadow: 2px 2px 15px #979595;
   cursor: pointer;
 }
 
-.container-header {
+.header {
   width: 100%;
-  font-family: "Roboto", sans-serif;
-  z-index: 1;
+  margin-bottom: -15px;
 }
-.container-header__heading, .container-header__heading-pages {
+@media (min-width: 768px) {
+  .header {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+.header__heading, .header__heading-pages {
   height: 60px;
   font-family: "Shrikhand", sans-serif;
   color: #000000;
   text-align: center;
   vertical-align: middle;
-  font-size: 180%;
+  font-size: 200%;
   padding-top: 3%;
   padding-bottom: 3%;
 }
 @media (min-width: 992px) {
-  .container-header__heading, .container-header__heading-pages {
+  .header__heading, .header__heading-pages {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -80,7 +85,7 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .container-header__heading, .container-header__heading-pages {
+  .header__heading, .header__heading-pages {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -88,53 +93,15 @@
     padding-left: 3%;
   }
 }
-.container-header__form {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e2e0e0;
-  box-shadow: 0px 2px 3px #bdbcbc inset;
-}
-.container-header__form__icon {
-  font-size: 110%;
-  padding-left: 10%;
-}
-@media (min-width: 992px) {
-  .container-header__form__icon {
-    padding-left: 3%;
-  }
-}
-@media (min-width: 769px) and (max-width: 991px) {
-  .container-header__form__icon {
-    padding-left: 3%;
-  }
-}
-.container-header__form__input input {
-  border: none;
-  background-color: #e2e0e0;
-  padding-left: 5%;
-  font-size: 100%;
-}
-@media (min-width: 992px) {
-  .container-header__form__input input {
-    font-size: 120%;
-  }
-}
-@media (min-width: 768px) {
-  .container-header__form {
-    width: 100%;
-    justify-content: flex-start;
-  }
-}
-.container-header__desc {
+.header__desc {
+  font-family: "Roboto", sans-serif;
   text-align: center;
   background-color: #f2f2f2;
   padding-top: 7%;
   padding-bottom: 15%;
 }
 @media (min-width: 768px) {
-  .container-header__desc {
+  .header__desc {
     text-align: center;
     padding-top: 1%;
     font-size: smaller;
@@ -142,44 +109,46 @@
     padding-bottom: 2%;
   }
 }
-.container-header__heading-pages {
+.header__heading-pages {
   display: flex;
   align-items: center;
 }
-.container-header__heading-img {
+.header__heading-img {
   width: 100%;
   z-index: 1;
 }
-.container-header img {
+
+.header img {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  padding-bottom: 2%;
-  z-index: 1;
 }
-.container-header a {
+
+.header a {
   margin-left: 5%;
 }
 @media (min-width: 992px) {
-  .container-header a {
+  .header a {
     margin-left: 0;
   }
 }
-.container-header p {
+
+.header p {
   margin-left: 20%;
 }
 @media (min-width: 992px) {
-  .container-header p {
+  .header p {
     margin-left: 3%;
   }
 }
-.container-header .fa-arrow-left {
+
+.header .fa-arrow-left {
   font-size: 65%;
   color: black;
   margin-left: 5%;
 }
 @media (min-width: 992px) {
-  .container-header .fa-arrow-left {
+  .header .fa-arrow-left {
     margin-left: 0;
   }
 }
@@ -239,34 +208,32 @@
     opacity: 0;
   }
 }
-.guide {
+.fonctionnement {
   width: 100%;
-  margin-top: 10%;
-}
-@media (min-width: 992px) {
-  .guide {
-    margin-top: 2%;
+  /*margin-top: 10%;
+  @media (min-width: 992px) {
+      margin-top: 2%;                    
   }
+  @media (min-width: 768px) and (max-width: 991px) {
+      margin-top: 3%;                    
+  }*/
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .guide {
-    margin-top: 3%;
-  }
-}
-.guide__heading {
+.fonctionnement__heading {
   padding-left: 5%;
+  padding-top: 5%;
 }
 @media (min-width: 992px) {
-  .guide__heading {
+  .fonctionnement__heading {
     padding-left: 3%;
   }
 }
-.guide__steps {
+.fonctionnement__steps {
   margin-top: 7%;
   margin-left: 5%;
+  padding-bottom: 3%;
 }
 @media (min-width: 992px) {
-  .guide__steps {
+  .fonctionnement__steps {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -275,7 +242,7 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .guide__steps {
+  .fonctionnement__steps {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -283,7 +250,7 @@
     margin-left: 3%;
   }
 }
-.guide__steps__choose, .guide__steps__compose, .guide__steps__eat {
+.fonctionnement__steps > .choose, .fonctionnement__steps > .compose, .fonctionnement__steps > .eat {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -298,7 +265,7 @@
   margin-bottom: 7%;
 }
 @media (min-width: 992px) {
-  .guide__steps__choose, .guide__steps__compose, .guide__steps__eat {
+  .fonctionnement__steps > .choose, .fonctionnement__steps > .compose, .fonctionnement__steps > .eat {
     width: 25%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -308,7 +275,7 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .guide__steps__choose, .guide__steps__compose, .guide__steps__eat {
+  .fonctionnement__steps > .choose, .fonctionnement__steps > .compose, .fonctionnement__steps > .eat {
     justify-content: start;
     align-items: center;
     width: 75%;
@@ -319,7 +286,7 @@
     margin-bottom: 3%;
   }
 }
-.guide__steps__choose__number, .guide__steps__compose__number, .guide__steps__eat__number {
+.fonctionnement__steps .number {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,7 +301,7 @@
   color: #ffffff;
 }
 @media (min-width: 992px) {
-  .guide__steps__choose__number, .guide__steps__compose__number, .guide__steps__eat__number {
+  .fonctionnement__steps .number {
     position: relative;
     left: -15px;
     padding-top: 3px;
@@ -342,7 +309,7 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .guide__steps__choose__number, .guide__steps__compose__number, .guide__steps__eat__number {
+  .fonctionnement__steps .number {
     position: relative;
     left: -10px;
     padding-top: 4px;
@@ -350,41 +317,41 @@
     min-width: 25px;
   }
 }
-.guide__steps__choose i, .guide__steps__compose i, .guide__steps__eat i {
+.fonctionnement__steps i {
   font-size: 140%;
   margin-left: 13%;
 }
 @media (min-width: 992px) {
-  .guide__steps__choose i, .guide__steps__compose i, .guide__steps__eat i {
+  .fonctionnement__steps i {
     padding-top: 1%;
     margin-left: 7%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .guide__steps__choose i, .guide__steps__compose i, .guide__steps__eat i {
+  .fonctionnement__steps i {
     margin-left: 3%;
   }
 }
-.guide__steps__choose p, .guide__steps__compose p, .guide__steps__eat p {
+.fonctionnement__steps p {
   margin-left: 7%;
 }
 @media (min-width: 992px) {
-  .guide__steps__choose p, .guide__steps__compose p, .guide__steps__eat p {
+  .fonctionnement__steps p {
     margin-left: 10%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .guide__steps__choose p, .guide__steps__compose p, .guide__steps__eat p {
+  .fonctionnement__steps p {
     margin-left: 3%;
   }
 }
-.guide__steps .guide__steps__eat {
+.fonctionnement__steps .eat {
   background-color: hsl(267.3134328358deg, 60%, 90%);
 }
 
 .restaurants {
   width: 100%;
-  margin-top: 10%;
+  margin-top: 8%;
   padding-bottom: 10%;
   background-color: #f2f2f2;
 }
@@ -401,7 +368,7 @@
 }
 .restaurants__heading {
   padding-left: 5%;
-  padding-top: 10%;
+  padding-top: 8%;
 }
 @media (min-width: 992px) {
   .restaurants__heading {
@@ -414,18 +381,18 @@
     padding-top: 1%;
   }
 }
-.restaurants__container {
+.restaurants__cards {
   margin-top: 7%;
 }
 @media (min-width: 992px) {
-  .restaurants__container {
+  .restaurants__cards {
     margin-top: 2%;
     display: flex;
     align-items: center;
     justify-content: start;
   }
 }
-.restaurants__container__card {
+.restaurants__cards > .main-card {
   width: 90%;
   background-color: #ffffff;
   border-radius: 15px;
@@ -435,15 +402,15 @@
   margin-bottom: 5%;
 }
 @media (min-width: 992px) {
-  .restaurants__container__card {
+  .restaurants__cards > .main-card {
     width: 20%;
     margin-left: 3%;
   }
 }
-.restaurants__container__card__images {
+.restaurants .main-card .images {
   position: relative;
 }
-.restaurants__container__card__images .new {
+.restaurants .main-card .images .new {
   width: 90px;
   height: 30px;
   background: #99E2D0;
@@ -457,11 +424,7 @@
   top: 7%;
   padding-top: 5px;
 }
-.restaurants__container a {
-  text-decoration: none;
-  color: black;
-}
-.restaurants__container img {
+.restaurants .images img {
   width: 100%;
   height: 170px;
   object-fit: cover;
@@ -469,46 +432,27 @@
   border-top-right-radius: 15px;
   padding-bottom: 2%;
 }
-.restaurants__container .label {
+.restaurants .main-card a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants .label {
   display: flex;
 }
-.restaurants__container .nom {
+.restaurants .label .nom {
   width: 80%;
   padding-bottom: 2%;
 }
-.restaurants__container p {
+.restaurants .label .nom p {
   color: #000000;
   font-size: 110%;
   padding-left: 4%;
-  padding-bottom: 1%;
+  padding-bottom: 2%;
+  margin: 0;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .restaurants__container p {
+  .restaurants .label .nom p {
     line-height: 15px;
-  }
-}
-.restaurants__container .icon {
-  margin-top: 2%;
-  margin-left: 4%;
-  width: 35px;
-  height: 35px;
-}
-.restaurants__container .fa-heart {
-  font-size: 150%;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-  color: #ffffff;
-  padding-left: 3px;
-  padding-top: 3px;
-}
-.restaurants__container .fa-heart:active {
-  animation: fa-heart 2s;
-}
-@keyframes fa-heart {
-  0% {
-    color: #ffffff;
-  }
-  100% {
-    color: #FF79DA;
   }
 }
 
@@ -561,94 +505,84 @@ footer {
   }
 }
 
-.footer__propose, .footer__partner {
+.footer__menu .propose, .footer__menu .partner {
   display: flex;
   align-items: baseline;
 }
 @media (min-width: 992px) {
-  .footer__propose, .footer__partner {
+  .footer__menu .propose, .footer__menu .partner {
     width: 20%;
   }
 }
 
-.footer__mention {
+.footer__menu .mention {
   padding-top: 1%;
 }
 @media (min-width: 992px) {
-  .footer__mention {
+  .footer__menu .mention {
     font-size: 100%;
     padding-right: 15%;
     margin-top: 0;
   }
 }
 
-.footer__contact {
+.footer__menu .contact {
   padding-top: 2%;
 }
 @media (min-width: 992px) {
-  .footer__contact {
+  .footer__menu .contact {
     padding-top: 1%;
   }
 }
 
-p {
+.footer__menu p {
   margin: 1%;
 }
 
-a {
+.footer__menu a {
   text-decoration: none;
   color: white;
 }
 
-.fa-utensils {
+.footer__menu .fa-utensils {
   padding-right: 3%;
 }
 @media (min-width: 992px) {
-  .fa-utensils {
+  .footer__menu .fa-utensils {
     font-size: 110%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .fa-utensils {
+  .footer__menu .fa-utensils {
     padding-right: 1%;
   }
 }
 
-.fa-handshake-angle {
+.footer__menu .fa-handshake-angle {
   font-size: 75%;
   padding-right: 3%;
 }
 @media (min-width: 992px) {
-  .fa-handshake-angle {
+  .footer__menu .fa-handshake-angle {
     font-size: 110%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .fa-handshake-angle {
+  .footer__menu .fa-handshake-angle {
     padding-right: 1%;
   }
 }
 
 .container-header__heading-img {
   width: 100%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.container-header__heading-img img {
-  z-index: 1;
-}
-
-main {
-  z-index: 2;
-}
-
-section {
-  z-index: 2;
 }
 
 .menu {
-  width: 100%;
   z-index: 2;
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top: 15px solid #ffffff;
 }
 .menu__heading {
   display: flex;
@@ -859,6 +793,94 @@ section {
   margin-bottom: 15%;
 }
 
+.header__desc h1 {
+  font-size: 150%;
+}
+@media (min-width: 992px) {
+  .header__desc h1 {
+    padding-left: 3%;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .header__desc h1 {
+    padding-left: 3%;
+  }
+}
+
+.header__desc h2 {
+  font-size: 110%;
+  font-weight: 300;
+}
+@media (min-width: 992px) {
+  .header__desc h2 {
+    padding-left: 3%;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .header__desc h2 {
+    padding-left: 3%;
+  }
+}
+
+.header__form {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e0e0;
+  box-shadow: 0px 2px 3px #bdbcbc inset;
+}
+.header__form > .icon {
+  font-size: 110%;
+  padding-left: 10%;
+}
+@media (min-width: 992px) {
+  .header__form > .icon {
+    padding-left: 3%;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .header__form > .icon {
+    padding-left: 3%;
+  }
+}
+.header__form > .input input {
+  border: none;
+  background-color: #e2e0e0;
+  padding-left: 5%;
+  font-size: 100%;
+}
+@media (min-width: 992px) {
+  .header__form > .input input {
+    font-size: 120%;
+  }
+}
+
+.restaurants .label .icon {
+  margin-top: 2%;
+  margin-left: 4%;
+  width: 35px;
+  height: 35px;
+}
+.restaurants .label .icon .fa-heart {
+  font-size: 150%;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  color: #ffffff;
+  padding-left: 3px;
+  padding-top: 3px;
+}
+.restaurants .label .icon .fa-heart:active {
+  animation: fa-heart 2s;
+}
+@keyframes fa-heart {
+  0% {
+    color: #ffffff;
+  }
+  100% {
+    color: #FF79DA;
+  }
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -870,35 +892,6 @@ html, body {
 
 main {
   font-family: "Roboto", sans-serif;
-}
-
-h1 {
-  font-size: 160%;
-}
-@media (min-width: 992px) {
-  h1 {
-    padding-left: 3%;
-  }
-}
-@media (min-width: 769px) and (max-width: 991px) {
-  h1 {
-    padding-left: 3%;
-  }
-}
-
-h2 {
-  font-size: 120%;
-  font-weight: 500;
-}
-@media (min-width: 992px) {
-  h2 {
-    padding-left: 3%;
-  }
-}
-@media (min-width: 769px) and (max-width: 991px) {
-  h2 {
-    padding-left: 3%;
-  }
 }
 
 h3 {

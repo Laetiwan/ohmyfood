@@ -5,6 +5,9 @@
 @import "./pages/index";
 @import "./layout/footer";
 @import "./layout/container";
+@import "./base/typography";
+@import "./layout/form";
+@import "./components/heart";
 
 html, body {
   margin: 0;
@@ -16,25 +19,6 @@ html, body {
 main {
   font-family: 'Roboto', sans-serif;
 }
-h1 {            
-  font-size: 160%;   
-  @media (min-width: 992px) {
-    padding-left: 3%;    
-  }
-  @media (min-width: 769px) and (max-width: 991px) {
-    padding-left: 3%;
-  }
-}
-h2 {
-  font-size: 120%;
-  font-weight: 500;
-  @media (min-width: 992px) {
-    padding-left: 3%;    
-  }
-  @media (min-width: 769px) and (max-width: 991px) {
-    padding-left: 3%;
-  }
-} 
 h3 {
   font-size: 160%;
 }

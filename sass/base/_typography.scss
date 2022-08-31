@@ -1,0 +1,19 @@
+.header__desc h1 {            
+    font-size: 150%;   
+    @media (min-width: 992px) {
+      padding-left: 3%;    
+    }
+    @media (min-width: 769px) and (max-width: 991px) {
+      padding-left: 3%;
+    }
+  }
+  .header__desc h2 {
+    font-size: 110%;
+    font-weight: 300;
+    @media (min-width: 992px) {
+      padding-left: 3%;    
+    }
+    @media (min-width: 769px) and (max-width: 991px) {
+      padding-left: 3%;
+    }
+  } 
