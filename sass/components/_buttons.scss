@@ -1,9 +1,9 @@
-.container__btn, .menu__commander-btn {
+.explorer-btn, .commander-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 7%;
-    
+        
     @media (min-width: 992px) {
         width: 30%;
         margin-top: 25px;
@@ -26,11 +26,11 @@
         width: 60%;
         box-shadow: 2px 2px 15px $color-heading-shadow;  
         @media (min-width: 992px) {
-            font-size: 130%; 
+            font-size: 150%; 
             width: 80%;           
         }
         @media (min-width: 769px) and (max-width: 991px) {
-            font-size: 120%;
+            font-size: 130%;
         }
         &:hover {
             background-color: hsl(hue($color-primary), 100%, 70%);

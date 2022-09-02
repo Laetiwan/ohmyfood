@@ -1,4 +1,4 @@
-.header__form {
+.header__form {    
     height: 50px;
     display: flex;
     justify-content: center;
@@ -6,9 +6,10 @@
     background-color: $color-heading-bg-form;
     box-shadow: 0px 2px 3px $color-heading-shadow inset;
 
-    & > .icon {
+    .icon {
         font-size: 110%;
-        padding-left: 10%;
+        color: $color-form-icon;
+        
         @media (min-width: 992px) {
             padding-left: 3%;                
         }
@@ -17,11 +18,12 @@
         } 
     }
     
-    & > .input input {
+    .input input {
         border: none;
         background-color: $color-heading-bg-form;
-        padding-left: 5%;
-        font-size: 100%;
+        text-align: center;
+        font-size: 110%;
+        
         @media (min-width: 992px) {
             font-size: 120%;                
         }

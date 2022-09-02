@@ -1,6 +1,3 @@
-.container-header__heading-img {
-    width: 100%; 
-}
 .menu {
     z-index: 2;
     position: relative;        
@@ -24,7 +21,7 @@
             }
         }
     }
-    &__container-card {
+    &__container {
         width: 100%;
         margin-left: 5%; 
         @media (min-width: 992px) {
@@ -32,9 +29,10 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: 1%;
-        }       
-        &__entrees, &__plats, &__desserts {            
-            &__1, &__2, &__3, &__4 {
+        } 
+              
+        /*.entrees, .plats, .desserts {            
+            .card-menu {
                 width: 90%;
                 height: 70px;
                 margin-top: 5%;
@@ -56,7 +54,7 @@
                     width: 60%;  
                     height: 80px; 
                 }
-
+            
                 &:active {     
                     & > .prix {               
                         animation: prix ease 500ms;
@@ -70,7 +68,7 @@
                             animation-fill-mode:forwards;
                         }
                     }
-                }                                
+                } 
                 .nom {
                     width: 65%;  
                     padding-left: 5%;
@@ -94,7 +92,7 @@
                         white-space: nowrap;
                         overflow:hidden;
                         text-overflow: ellipsis; 
-
+            
                         @media (min-width: 992px) {
                             font-size: 110%;
                                                        
@@ -144,7 +142,8 @@
                         background-color: $color-tertiary;
                         color: #ffffff;
                     }
-                }  
+                } 
+            } 
                 @keyframes prix {
                     0% {                                        
                     }   
@@ -172,17 +171,17 @@
                 }            
             }
         }                
-        &__entrees {
+        .entrees {
             animation: courses ease 5s;
             animation-fill-mode:forwards;
         }
-        &__plats {
+        .plats {
             opacity: 0;
             animation: courses ease 5s;
             animation-delay: 2s;
             animation-fill-mode:forwards;
         }
-        &__desserts {
+        .desserts {
             opacity: 0;
             animation: courses ease 5s;
             animation-delay: 4s;
@@ -195,12 +194,6 @@
             100% { 
                 opacity: 1;           
             }
-        }
-    }
-    .menu__commander-btn {
-        &__btn {
-            margin-top: 5%;
-            margin-bottom: 15%;            
-        } 
+        }*/
     }
 }
