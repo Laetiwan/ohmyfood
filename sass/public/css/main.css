@@ -12,6 +12,7 @@
     justify-content: flex-start;
     padding-left: 3%;
     margin-left: 37%;
+    margin-bottom: 2%;
   }
 }
 @media (min-width: 769px) and (max-width: 991px) {
@@ -40,7 +41,7 @@
 }
 @media (min-width: 992px) {
   .explorer-btn .main-button, .commander-btn .main-button {
-    font-size: 150%;
+    font-size: 130%;
     width: 80%;
   }
 }
@@ -122,6 +123,11 @@
 @media (min-width: 992px) {
   .header__heading-pages p {
     margin-left: 3%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .header__heading-pages p {
+    margin-left: 30%;
   }
 }
 .header__desc {
@@ -424,11 +430,13 @@ footer {
   footer {
     height: 120px;
     padding-left: 3%;
+    margin-top: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   footer {
     padding-bottom: 5%;
+    margin-top: 0;
   }
 }
 
@@ -924,15 +932,15 @@ footer {
   }
 }
 .entrees .card-menu:active > .prix, .plats .card-menu:active > .prix, .desserts .card-menu:active > .prix {
-  animation: prix ease 500ms;
+  animation: prix ease 300ms;
   animation-fill-mode: forwards;
 }
 .entrees .card-menu:active > .coche, .plats .card-menu:active > .coche, .desserts .card-menu:active > .coche {
-  animation: coche linear 500ms;
+  animation: coche linear 300ms;
   animation-fill-mode: forwards;
 }
 .entrees .card-menu:active > .coche .fa-circle-check, .plats .card-menu:active > .coche .fa-circle-check, .desserts .card-menu:active > .coche .fa-circle-check {
-  animation: check linear 500ms;
+  animation: check linear 300ms;
   animation-fill-mode: forwards;
 }
 .entrees .card-menu .nom, .plats .card-menu .nom, .desserts .card-menu .nom {

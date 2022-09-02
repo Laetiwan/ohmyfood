@@ -7,10 +7,12 @@ footer {
     font-family: 'Roboto', sans-serif;
     @media (min-width: 992px) {
         height: 120px;
-        padding-left: 3%;                     
+        padding-left: 3%;   
+        margin-top: 0;                  
     }
     @media (min-width: 768px) and (max-width: 991px) {
-        padding-bottom: 5%;                        
+        padding-bottom: 5%; 
+        margin-top: 0;                       
     }
 }
 .footer__heading {

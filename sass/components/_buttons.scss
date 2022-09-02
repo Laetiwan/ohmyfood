@@ -11,6 +11,7 @@
         justify-content:flex-start;  
         padding-left: 3%;
         margin-left: 37%;
+        margin-bottom: 2%;
     }
     @media (min-width: 769px) and (max-width: 991px) {
         width: 60%;
@@ -26,7 +27,7 @@
         width: 60%;
         box-shadow: 2px 2px 15px $color-heading-shadow;  
         @media (min-width: 992px) {
-            font-size: 150%; 
+            font-size: 130%; 
             width: 80%;           
         }
         @media (min-width: 769px) and (max-width: 991px) {

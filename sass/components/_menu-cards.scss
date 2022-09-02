@@ -24,14 +24,14 @@
     
         &:active {     
             & > .prix {               
-                animation: prix ease 500ms;
+                animation: prix ease 300ms;
                 animation-fill-mode:forwards;
             }
             & > .coche {
-                animation: coche linear 500ms;
+                animation: coche linear 300ms;
                 animation-fill-mode:forwards;
                 .fa-circle-check {               
-                    animation: check linear 500ms;
+                    animation: check linear 300ms;
                     animation-fill-mode:forwards;
                 }
             }
