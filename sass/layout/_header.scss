@@ -3,7 +3,6 @@
     margin-bottom: -15px;
     @media (min-width: 768px) {
         width: 100%;
-        /*justify-content:flex-start;  */          
     }
     &__heading, &__heading-pages {
         height: 60px;
@@ -37,13 +36,11 @@
             width: 35px;
             font-size: 60%;
             color: black;
-            /*margin-left: 25px;*/
             @media (min-width: 992px) {
                 margin-left: 0;            
             }
         } 
         & a {
-            /*margin-left: 5%;*/
             @media (min-width: 992px) {
                 margin-left: 0;            
             }
@@ -82,34 +79,4 @@
         }
     }    
 }
-    
-    
-    
-    
-    
-/*.header img {
-        width: 100%;
-        height:250px;      
-        object-fit: cover;   
-    }
-    .header a {
-        margin-left: 5%;
-        @media (min-width: 992px) {
-            margin-left: 0;            
-        }
-    }
-    .header p {
-        margin-left: 20%;
-        @media (min-width: 992px) {
-            margin-left: 3%;            
-        }
-    }*/
-    /*.header .fa-arrow-left {
-        font-size: 65%;
-        color: black;
-        margin-left: 5%;
-        @media (min-width: 992px) {
-            margin-left: 0;            
-        }
-    }   */
  

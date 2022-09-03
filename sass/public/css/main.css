@@ -63,7 +63,6 @@
 @media (min-width: 768px) {
   .header {
     width: 100%;
-    /*justify-content:flex-start;  */
   }
 }
 .header__heading, .header__heading-pages {
@@ -102,15 +101,11 @@
   width: 35px;
   font-size: 60%;
   color: black;
-  /*margin-left: 25px;*/
 }
 @media (min-width: 992px) {
   .header__heading-pages .fa-arrow-left {
     margin-left: 0;
   }
-}
-.header__heading-pages a {
-  /*margin-left: 5%;*/
 }
 @media (min-width: 992px) {
   .header__heading-pages a {
@@ -156,95 +151,8 @@
   object-fit: cover;
 }
 
-/*.header img {
-        width: 100%;
-        height:250px;      
-        object-fit: cover;   
-    }
-    .header a {
-        margin-left: 5%;
-        @media (min-width: 992px) {
-            margin-left: 0;            
-        }
-    }
-    .header p {
-        margin-left: 20%;
-        @media (min-width: 992px) {
-            margin-left: 3%;            
-        }
-    }*/
-/*.header .fa-arrow-left {
-    font-size: 65%;
-    color: black;
-    margin-left: 5%;
-    @media (min-width: 992px) {
-        margin-left: 0;            
-    }
-}   */
-.container-loading-spinner {
-  width: 100%;
-  background-color: #ffffff;
-  animation: 3s linear container-loading-spinner;
-}
-
-@keyframes container-loading-spinner {
-  0% {
-    opacity: 0.1;
-    pointer-events: none;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.loading-spinner {
-  position: absolute;
-  top: 25%;
-  left: 35%;
-  width: 100px;
-  height: 100px;
-  border: 10px solid #9356DC;
-  border-top: 10px solid #FF79DA;
-  border-bottom: 10px solid #99E2D0;
-  border-radius: 50%;
-  overflow: hidden;
-  animation: 2s linear loading-spinner;
-  animation-fill-mode: forwards;
-}
-@media (min-width: 992px) {
-  .loading-spinner {
-    top: 50%;
-    left: 48%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .loading-spinner {
-    top: 40%;
-    left: 42%;
-  }
-}
-
-@keyframes loading-spinner {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  95% {
-    transform: rotate(360deg);
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 .fonctionnement {
   width: 100%;
-  /*margin-top: 10%;
-  @media (min-width: 992px) {
-      margin-top: 2%;                    
-  }
-  @media (min-width: 768px) and (max-width: 991px) {
-      margin-top: 3%;                    
-  }*/
 }
 .fonctionnement__heading {
   padding-left: 5%;
@@ -568,170 +476,6 @@ footer {
 .menu__container {
   width: 100%;
   margin-left: 5%;
-  /*.entrees, .plats, .desserts {            
-      .card-menu {
-          width: 90%;
-          height: 70px;
-          margin-top: 5%;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          border-radius: 15px;
-          box-shadow: 1px 1px 15px $color-heading-shadow;   
-          cursor: pointer;
-          @media (min-width: 992px) {
-              margin-top: 2%;
-              width: 50%;  
-              height: 100px;    
-              margin-left: auto;
-              margin-right: auto;
-          }
-          @media (min-width: 768px) and (max-width: 991px) {
-              margin-top: 2%;
-              width: 60%;  
-              height: 80px; 
-          }
-
-          &:active {     
-              & > .prix {               
-                  animation: prix ease 500ms;
-                  animation-fill-mode:forwards;
-              }
-              & > .coche {
-                  animation: coche linear 500ms;
-                  animation-fill-mode:forwards;
-                  .fa-circle-check {               
-                      animation: check linear 500ms;
-                      animation-fill-mode:forwards;
-                  }
-              }
-          } 
-          .nom {
-              width: 65%;  
-              padding-left: 5%;
-              line-height: 25px;  
-              @media (min-width: 992px) {
-                  width: 50%;
-              }
-              strong {
-                  font-size: 120%; 
-                  margin: 0;
-                  white-space: nowrap;
-                  overflow:hidden;
-                  text-overflow: ellipsis;
-                  @media (min-width: 992px) {
-                      font-size: 110%;
-                  }
-              } 
-              p {
-                  font-size: 85%;   
-                  margin: 0;
-                  white-space: nowrap;
-                  overflow:hidden;
-                  text-overflow: ellipsis; 
-
-                  @media (min-width: 992px) {
-                      font-size: 110%;
-
-                  }
-              }
-          }   
-          .prix {                    
-              width: 12%;                                         
-              padding-top: 8%;
-              padding-left: 10%;
-              font-size: 100%;
-              font-weight: bold;
-              @media (min-width: 992px) {
-                  font-size: 110%; 
-                  padding-top: 4%;
-                  padding-left: 35%;
-              }      
-              @media (min-width: 768px) and (max-width: 991px) {
-                  padding-top: 6%; 
-              }              
-          }
-         .coche {
-              opacity: 0;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 12%;
-              height: 70px;
-              background-color: $color-tertiary;
-              border-bottom-right-radius: 15px;
-              border-top-right-radius: 15px;
-              @media (min-width: 992px) {
-                  height: 100px;
-              }
-              @media (min-width: 768px) and (max-width: 991px) {
-                  height: 80px;
-              }
-              i {
-                  min-width: 25px;
-                  padding-top: 2%;
-                  padding-bottom: 2%;    
-                  border-radius: 50%;
-              }
-              .fa-circle-check {
-                  font-size: 140%;
-                  font-weight: bold;
-                  background-color: $color-tertiary;
-                  color: #ffffff;
-              }
-          } 
-      } 
-          @keyframes prix {
-              0% {                                        
-              }   
-              100% {   
-                  margin-right: 10%;
-              }                    
-          } 
-          @keyframes coche {
-              0% { 
-                  opacity: 1;                           
-                  width: 1px;                  
-              } 
-              100% {  
-                  opacity: 1;
-                  width: 50px;
-                  }
-          }  
-          @keyframes check {
-              0% { 
-                  transform: rotate(0deg);                  
-              } 
-              100% {  
-                  transform: rotate(360deg);
-                  }
-          }            
-      }
-  }                
-  .entrees {
-      animation: courses ease 5s;
-      animation-fill-mode:forwards;
-  }
-  .plats {
-      opacity: 0;
-      animation: courses ease 5s;
-      animation-delay: 2s;
-      animation-fill-mode:forwards;
-  }
-  .desserts {
-      opacity: 0;
-      animation: courses ease 5s;
-      animation-delay: 4s;
-      animation-fill-mode:forwards;
-  }
-  @keyframes courses {
-      0% { 
-          opacity: 0;        
-      }
-      100% { 
-          opacity: 1;           
-      }
-  }*/
 }
 @media (min-width: 992px) {
   .menu__container {
@@ -773,6 +517,62 @@ footer {
     padding-left: 3%;
     font-size: 120%;
   }
+}
+
+h3 {
+  font-size: 160%;
+}
+
+h4 {
+  font-size: 170%;
+  font-family: "Shrikhand", sans-serif;
+}
+@media (min-width: 992px) {
+  h4 {
+    font-size: 200%;
+  }
+}
+
+h5 {
+  width: 12%;
+  font-size: 110%;
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+  margin-bottom: 3%;
+  padding-bottom: 2%;
+  margin-top: 8%;
+}
+@media (min-width: 992px) {
+  h5 {
+    margin-top: 2%;
+    padding-bottom: 5px;
+    width: 3%;
+    font-size: 150%;
+    margin-left: 45%;
+    margin-right: auto;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  h5 {
+    margin-top: 3%;
+    padding-bottom: 5px;
+    width: 5%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
 }
 
 .header__form {
@@ -1080,57 +880,61 @@ footer {
     opacity: 1;
   }
 }
-html, body {
-  margin: 0;
-  padding: 0;
+.container-loading-spinner {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(255, 255, 255);
+  animation: 3s linear container-loading-spinner;
+  animation-fill-mode: forwards;
 }
 
-* {
-  box-sizing: border-box;
+@keyframes container-loading-spinner {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    visibility: collapse;
+  }
 }
-
-main {
-  font-family: "Roboto", sans-serif;
-}
-
-h3 {
-  font-size: 160%;
-}
-
-h4 {
-  font-size: 170%;
-  font-family: "Shrikhand", sans-serif;
+.loading-spinner {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  width: 100px;
+  height: 100px;
+  border: 10px solid #9356DC;
+  border-top: 10px solid #FF79DA;
+  border-bottom: 10px solid #99E2D0;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: 3s linear loading-spinner;
+  animation-fill-mode: forwards;
 }
 @media (min-width: 992px) {
-  h4 {
-    font-size: 200%;
+  .loading-spinner {
+    top: 50%;
+    left: 48%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .loading-spinner {
+    top: 40%;
+    left: 42%;
   }
 }
 
-h5 {
-  width: 12%;
-  font-size: 110%;
-  font-weight: 300;
-  border-bottom: 3px solid #99E2D0;
-  margin-bottom: 3%;
-  /*margin-top: 10%;*/
-  padding-bottom: 2%;
-}
-@media (min-width: 992px) {
-  h5 {
-    margin-top: 2%;
-    padding-bottom: 5px;
-    width: 3%;
-    font-size: 150%;
-    margin-left: 45%;
-    margin-right: auto;
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
   }
-}
-@media (min-width: 769px) and (max-width: 991px) {
-  h5 {
-    margin-top: 3%;
-    padding-bottom: 5px;
-    width: 5%;
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
   }
 }
 
