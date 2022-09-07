@@ -258,6 +258,7 @@
 .fonctionnement__steps i {
   font-size: 140%;
   margin-left: 13%;
+  color: #979696;
 }
 @media (min-width: 992px) {
   .fonctionnement__steps i {
@@ -285,6 +286,9 @@
 }
 .fonctionnement__steps .eat {
   background-color: hsl(267.3134328358deg, 60%, 90%);
+}
+.fonctionnement__steps .eat .fa-store {
+  color: #9356DC;
 }
 
 .restaurants {
@@ -622,8 +626,9 @@ main {
   padding-left: 3px;
   padding-top: 3px;
 }
-.restaurants .label .icon .fa-heart:active {
-  animation: fa-heart 2s;
+.restaurants .label .icon .fa-heart:hover {
+  animation: fa-heart 1s;
+  animation-fill-mode: forwards;
 }
 @keyframes fa-heart {
   0% {

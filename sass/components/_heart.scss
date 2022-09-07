@@ -11,8 +11,9 @@
         color: #ffffff;
         padding-left: 3px;
         padding-top: 3px;            
-        &:active {
-            animation: fa-heart 2s;                
+        &:hover {
+            animation: fa-heart 1s; 
+            animation-fill-mode: forwards;               
         }            
     }
     @keyframes fa-heart {

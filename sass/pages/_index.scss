@@ -90,6 +90,7 @@
     &__steps i {
         font-size: 140%;
         margin-left: 13%;
+        color: #979696;
         @media (min-width: 992px) {
             padding-top: 1%;
             margin-left: 7%;                        
@@ -109,6 +110,9 @@
     }            
     &__steps .eat {
             background-color: hsl(hue($color-primary),60%,+90%);
+            .fa-store {
+                color: #9356DC;
+            }
         }
 }
 .restaurants {
