@@ -3,14 +3,15 @@
     height: 100%;
     position:fixed;
     top: 0px;
-    left:0px;  
+    left:0px;
+    z-index: 2;
     background-color:rgba(255, 255, 255, 1);
     animation: 3s linear container-loading-spinner;  
     animation-fill-mode:forwards;    
 }
 @keyframes container-loading-spinner {
     0% { 
-        background-color:rgba(255, 255, 255, 1);        
+        background-color:rgba(255, 255, 255, 1);       
     }    
     100% { 
         background-color:rgba(255, 255, 255, 0);

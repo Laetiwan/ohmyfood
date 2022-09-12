@@ -51,7 +51,8 @@
   }
 }
 .explorer-btn .main-button:hover, .commander-btn .main-button:hover {
-  background-color: hsl(267.3134328358deg, 100%, 70%);
+  /*background-color: hsl(hue($color-primary), 100%, 70%);*/
+  background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 2px 2px 15px #979595;
   cursor: pointer;
 }
@@ -613,29 +614,46 @@ main {
   }
 }
 
+.restaurants {
+  /*.label .icon .fa-heart {
+
+      font-size : 150%;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+      color: #ffffff;
+      padding-left: 3px;
+      padding-top: 3px;   */
+  /*&:hover {
+          animation: fa-heart 1s; 
+          animation-fill-mode: forwards;               
+      }         
+  }*/
+}
 .restaurants .label .icon {
   margin-top: 2%;
   margin-left: 4%;
   width: 35px;
   height: 35px;
 }
-.restaurants .label .icon .fa-heart {
-  font-size: 150%;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-  color: #ffffff;
-  padding-left: 3px;
-  padding-top: 3px;
-}
-.restaurants .label .icon .fa-heart:hover {
-  animation: fa-heart 1s;
+.restaurants .label .icon:hover {
+  animation: icon 1s;
   animation-fill-mode: forwards;
 }
-@keyframes fa-heart {
+.restaurants .label .icon p {
+  width: 25px;
+  height: 25px;
+  fill: #ffffff;
+  /*text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;*/
+}
+@keyframes icon {
   0% {
-    color: #ffffff;
+    /*color: #ffffff; */
+    background-color: #ffffff;
+    text-shadow: none;
   }
   100% {
-    color: #FF79DA;
+    background-color: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -684,7 +702,7 @@ main {
 
 .main-card a {
   text-decoration: none;
-  color: black;
+  /*color: black;*/
 }
 
 .label {
@@ -783,7 +801,7 @@ main {
   }
 }
 .entrees .card-menu .prix, .plats .card-menu .prix, .desserts .card-menu .prix {
-  width: 12%;
+  width: 10%;
   padding-top: 8%;
   padding-left: 10%;
   font-size: 100%;
@@ -806,11 +824,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 12%;
+  width: 1px;
   height: 70px;
   background-color: #99E2D0;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
+  overflow: hidden;
 }
 @media (min-width: 992px) {
   .entrees .card-menu .coche, .plats .card-menu .coche, .desserts .card-menu .coche {
@@ -822,8 +841,7 @@ main {
     height: 80px;
   }
 }
-.entrees .card-menu .coche i, .plats .card-menu .coche i, .desserts .card-menu .coche i {
-  min-width: 25px;
+.entrees .card-menu .coche .i, .plats .card-menu .coche .i, .desserts .card-menu .coche .i {
   padding-top: 2%;
   padding-bottom: 2%;
   border-radius: 50%;
@@ -835,6 +853,9 @@ main {
   color: #ffffff;
 }
 @keyframes prix {
+  0% {
+    margin-right: 0%;
+  }
   100% {
     margin-right: 10%;
   }
@@ -842,7 +863,6 @@ main {
 @keyframes coche {
   0% {
     opacity: 1;
-    width: 1px;
   }
   100% {
     opacity: 1;
@@ -891,6 +911,7 @@ main {
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index: 2;
   background-color: rgb(255, 255, 255);
   animation: 3s linear container-loading-spinner;
   animation-fill-mode: forwards;

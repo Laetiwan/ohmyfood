@@ -4,24 +4,45 @@
         margin-left:4%;
         width: 35px;
         height : 35px;
+        
+        &:hover {
+            animation: icon 1s; 
+            animation-fill-mode: forwards;               
+        } 
+        
+        p {
+            width: 25px;
+            height: 25px;
+            fill: #ffffff;
+            /*text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;*/
+            
+            
+        }
     }
-    .label .icon .fa-heart {
+    /*.label .icon .fa-heart {
+        
         font-size : 150%;
         text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
         color: #ffffff;
         padding-left: 3px;
-        padding-top: 3px;            
-        &:hover {
+        padding-top: 3px;   */         
+        /*&:hover {
             animation: fa-heart 1s; 
             animation-fill-mode: forwards;               
-        }            
-    }
-    @keyframes fa-heart {
+        }         
+    }*/
+    
+
+    @keyframes icon {
         0% { 
-            color: #ffffff;                       
+            /*color: #ffffff; */   
+            background-color: #ffffff;      
+            text-shadow:none;             
         }            
         100% {                 
-            color: $color-secondary;       
+            background-color: linear-gradient(#FF79DA,#9356DC);      
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 }

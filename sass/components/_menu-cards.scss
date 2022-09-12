@@ -58,8 +58,7 @@
                 margin: 0;
                 white-space: nowrap;
                 overflow:hidden;
-                text-overflow: ellipsis; 
-    
+                text-overflow: ellipsis;     
                 @media (min-width: 992px) {
                     font-size: 110%;
                                                
@@ -67,7 +66,7 @@
             }
         }   
         .prix {                    
-            width: 12%;                                         
+            width: 10%;                                         
             padding-top: 8%;
             padding-left: 10%;
             font-size: 100%;
@@ -86,33 +85,34 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 12%;
+            width: 1px;
             height: 70px;
             background-color: $color-tertiary;
             border-bottom-right-radius: 15px;
             border-top-right-radius: 15px;
+            overflow: hidden;
             @media (min-width: 992px) {
                 height: 100px;
             }
             @media (min-width: 768px) and (max-width: 991px) {
                 height: 80px;
             }
-            i {
-                min-width: 25px;
+            & .i {
                 padding-top: 2%;
                 padding-bottom: 2%;    
                 border-radius: 50%;
             }
-            .fa-circle-check {
+            & .fa-circle-check {
                 font-size: 140%;
                 font-weight: bold;
-                background-color: $color-tertiary;
+                background-color: $color-tertiary;                
                 color: #ffffff;
             }
         } 
     }
         @keyframes prix {
-            0% {                                        
+            0% {       
+                margin-right: 0%;                                 
             }   
             100% {   
                 margin-right: 10%;
@@ -120,17 +120,16 @@
         } 
         @keyframes coche {
             0% { 
-                opacity: 1;                           
-                width: 1px;                  
+                opacity: 1;
             } 
             100% {  
                 opacity: 1;
                 width: 50px;
-                }
+            }
         }  
         @keyframes check {
             0% { 
-                transform: rotate(0deg);                  
+                transform: rotate(0deg);                 
             } 
             100% {  
                 transform: rotate(360deg);
