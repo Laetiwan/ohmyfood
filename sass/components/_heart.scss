@@ -1,48 +1,42 @@
 .restaurants {
     .label .icon {
-        margin-top: 2%;
-        margin-left:4%;
-        width: 35px;
-        height : 35px;
+        width: 20%;
+        height: 30px;
+        display: flex;
+        justify-content: flex-end;
         
-        &:hover {
-            animation: icon 1s; 
-            animation-fill-mode: forwards;               
-        } 
-        
-        p {
-            width: 25px;
-            height: 25px;
-            fill: #ffffff;
-            /*text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;*/
-            
-            
+        @media (min-width: 992px) {
+            position: absolute;                                          
         }
-    }
-    /*.label .icon .fa-heart {
-        
-        font-size : 150%;
-        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-        color: #ffffff;
-        padding-left: 3px;
-        padding-top: 3px;   */         
-        /*&:hover {
-            animation: fa-heart 1s; 
-            animation-fill-mode: forwards;               
-        }         
-    }*/
-    
 
-    @keyframes icon {
-        0% { 
-            /*color: #ffffff; */   
-            background-color: #ffffff;      
-            text-shadow:none;             
-        }            
-        100% {                 
-            background-color: linear-gradient(#FF79DA,#9356DC);      
+        & .fa-regular {
+            font-size: 30px;
+            color: #000000;  
+            margin-right: 25px;                      
+        }
+        & .fa-solid {
+            font-size: 30px;
+            color: #000000;  
+            position: absolute;
+            margin-right: 25px;
+            color: transparent;
+            background-image: linear-gradient(to bottom, $color-primary, $color-secondary);
+            background-clip: text;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            &:active {
+                animation: heart ease-in-out 500ms; 
+                animation-fill-mode: forwards;               
+            }
+        }             
+    }
+    @keyframes heart {
+        0% { 
+            opacity: 0;
+        }            
+        100% {   
+            opacity: 1;
         }
     }
 }
+
