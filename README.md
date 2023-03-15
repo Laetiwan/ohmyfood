@@ -12,8 +12,8 @@ Compétences évaluées
 3. Mettre en place une structure de navigation pour un site web
 
 
-4. Mettre en place son environnement Front-End
+4. Mettre en place son environnement Front-End (méthodologie BEM, préprocesseur SASS)
 
 
-5. Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
+5. Utiliser un système de gestion de versions pour le suivi du projet et son hébergement (GitHub)
 
