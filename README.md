@@ -23,3 +23,5 @@ Langages : HTML5, CSS3
 Méthodologie BEM
 Préprocesseur SASS
 Système 7-1
+
+Site valide W3C
