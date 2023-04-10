@@ -1,42 +1,30 @@
 .restaurants {
+
     .label .icon {
         width: 20%;
         height: 30px;
         display: flex;
         justify-content: flex-end;
-        
-        @media (min-width: 992px) {
-            position: absolute;                                          
+        margin-right: 25px;
+              
+        .fa-regular {
+                font-size: 30px;
+                color: black;  
+                &:hover {
+                    color: transparent;
+                }                                
         }
-
-        & .fa-regular {
-            font-size: 30px;
-            color: #000000;  
-            margin-right: 25px;                      
-        }
-        & .fa-solid {
-            font-size: 30px;
-            color: #000000;  
-            position: absolute;
-            margin-right: 25px;
-            color: transparent;
-            background-image: linear-gradient(to bottom, $color-primary, $color-secondary);
-            background-clip: text;
-            -webkit-background-clip: text;
-            opacity: 0;
-            &:active {
-                animation: heart ease-in-out 500ms; 
-                animation-fill-mode: forwards;               
-            }
-        }             
-    }
-    @keyframes heart {
-        0% { 
-            opacity: 0;
-        }            
-        100% {   
-            opacity: 1;
-        }
-    }
+        .fa-solid {
+                font-size: 30px;
+                position: absolute;                
+                color: transparent;
+                background-image: linear-gradient(to bottom, $color-primary, $color-secondary);
+                background-clip: text;
+                -webkit-background-clip: text;
+                opacity: 0;
+                &:hover {
+                    opacity: 1;
+                } 
+            }             
 }
-
+}

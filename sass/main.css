@@ -148,7 +148,8 @@
 .header__heading-img img {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .fonctionnement {
@@ -285,7 +286,7 @@
   }
 }
 .fonctionnement__steps .eat {
-  background-color: hsl(267.3134328358deg, 60%, 90%);
+  background-color: hsl(267.3134328358, 60%, 90%);
 }
 .fonctionnement__steps .eat .fa-store {
   color: #9356DC;
@@ -658,7 +659,7 @@ main {
   width: 90px;
   height: 30px;
   background: #99E2D0;
-  color: hsl(165.2054794521deg, 60%, 30%);
+  color: hsl(165.2054794521, 60%, 30%);
   z-index: 1;
   position: absolute;
   text-align: center;
@@ -672,7 +673,8 @@ main {
 .images img {
   width: 100%;
   height: 170px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   padding-bottom: 2%;
@@ -941,6 +943,4 @@ main {
     transform: rotate(360deg);
     opacity: 0;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
