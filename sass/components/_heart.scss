@@ -1,5 +1,4 @@
 .restaurants {
-
     .label .icon {
         width: 20%;
         height: 30px;
@@ -8,23 +7,52 @@
         margin-right: 25px;
               
         .fa-regular {
-                font-size: 30px;
-                color: black;  
-                &:hover {
-                    color: transparent;
-                }                                
+            font-size: 30px;
+            color: black;  
+            &:hover {
+                color: transparent;
+            }                                
         }
         .fa-solid {
-                font-size: 30px;
-                position: absolute;                
-                color: transparent;
-                background-image: linear-gradient(to bottom, $color-primary, $color-secondary);
-                background-clip: text;
-                -webkit-background-clip: text;
-                opacity: 0;
-                &:hover {
-                    opacity: 1;
-                } 
-            }             
+            font-size: 30px;
+            position: absolute;                
+            color: transparent;
+            background-image: linear-gradient(to bottom, $color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            &:hover {
+                opacity: 1;
+            } 
+        }             
+    }
 }
+
+.menu {
+    .icon {
+        width: 20%;
+        height: 30px;
+        display: flex;
+        justify-content: flex-end;
+              
+        .fa-regular {
+            font-size: 30px;
+            color: black;  
+            &:hover {
+                color: transparent;
+            }                                
+        }
+        .fa-solid {
+            font-size: 30px;
+            position: absolute;                
+            color: transparent;
+            background-image: linear-gradient(to bottom, $color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            &:hover {
+                opacity: 1;
+            } 
+        }             
+    }
 }

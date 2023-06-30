@@ -1,43 +1,51 @@
 footer {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: $color-footer-bg;
     color: white;
-    padding-left: 7%;
-    padding-bottom: 10%;
-    margin-top: 10%;
+    margin-top: 7%;
     font-family: 'Roboto', sans-serif;
+
     @media (min-width: 992px) {
-        height: 120px;
-        padding-left: 3%;   
         margin-top: 0;                  
     }
+    
     @media (min-width: 768px) and (max-width: 991px) {
         padding-bottom: 5%; 
-        margin-top: 0;                       
-    }
+        margin-top: 0;   
+        height: 200px;                    
+    }   
 }
 .footer__heading {
     font-family: 'Shrikhand', sans-serif;
-    font-size: 130%;
-    padding-top: 7%;
-    padding-bottom: 5%;
+    font-size: 150%;
+    padding-top: 3%;
+    padding-left: 5%;
     @media (min-width: 992px) {
         padding-top: 1%;
-        padding-bottom: 1%;
         font-size: 140%;                 
     }
     @media (min-width: 768px) and (max-width: 991px) {
         padding-top: 2%;
-        padding-bottom: 1%;
         font-size: 140%;                        
     }
 }
 .footer__menu {
+    padding-left: 5%;
+    padding-top: 3%;
     @media (min-width: 992px) {
         width: 95%;
+        padding-top: 1%;
         display: flex;
         align-items:baseline;
         justify-content: space-between;                       
     }     
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding-left: 5%;
+        padding-top: 1%;
+    }
 }
 .footer__menu .propose, .footer__menu .partner {
     display: flex;
@@ -61,7 +69,7 @@ footer {
     }    
 } 
 .footer__menu p {
-    margin: 1%;
+    line-height: 30px;
 }
 .footer__menu a {
     text-decoration: none;

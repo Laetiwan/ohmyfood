@@ -1,9 +1,4 @@
 .header {
-    width: 100%;    
-    margin-bottom: -15px;
-    @media (min-width: 768px) {
-        width: 100%;
-    }
     &__heading, &__heading-pages {
         height: 60px;
         font-family: 'Shrikhand', sans-serif;
@@ -12,7 +7,7 @@
         vertical-align: middle;
         font-size: 200%;
         padding-top: 3%;
-        padding-bottom: 3%;        
+        padding-bottom: 3%;             
                 
         @media (min-width: 992px) {
             display: flex;
@@ -31,42 +26,27 @@
     }
     &__heading-pages {
         display: flex;
+        justify-content: flex-start;
         align-items: center;   
         & .fa-arrow-left {
             width: 35px;
             font-size: 60%;
-            color: black;
-            @media (min-width: 992px) {
-                margin-left: 0;            
-            }
+            color: black;            
         } 
-        & a {
-            @media (min-width: 992px) {
-                margin-left: 0;            
-            }
-        }   
-        & p {
-            margin-left: 20%;
-            @media (min-width: 992px) {
-                margin-left: 3%;            
-            }
-            @media (min-width: 768px) and (max-width: 991px) {
-                margin-left: 30%;
-            }
+        
+        & p {           
+            padding-left: 5%;
         } 
     }
     &__desc {
         font-family: 'Roboto', sans-serif;
         text-align: center;
         background-color: $color-heading-bg-desc;
-        padding-top: 7%;
-        padding-bottom: 15%;
         @media (min-width: 768px) {
             text-align: center;    
-            padding-top: 1%; 
+            padding-top: 1%;
             font-size: smaller;
             line-height: 20px;
-            padding-bottom: 2%;            
         }
     }
     &__heading-img {
