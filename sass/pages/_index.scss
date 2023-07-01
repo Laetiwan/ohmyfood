@@ -1,5 +1,9 @@
 .fonctionnement {
     margin-top: 8%;
+    @media (min-width: 992px) {
+        margin-top: 3%;
+    }
+
     &__heading {
         padding-left: 5%;
         padding-top: 5%;

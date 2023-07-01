@@ -123,6 +123,11 @@
 .fonctionnement {
   margin-top: 8%;
 }
+@media (min-width: 992px) {
+  .fonctionnement {
+    margin-top: 3%;
+  }
+}
 .fonctionnement__heading {
   padding-left: 5%;
   padding-top: 5%;
@@ -495,6 +500,7 @@ footer {
 }
 @media (min-width: 992px) {
   .header__desc h1 {
+    padding-top: 2%;
     padding-left: 3%;
     font-size: 230%;
   }
@@ -515,6 +521,7 @@ footer {
 }
 @media (min-width: 992px) {
   .header__desc h2 {
+    padding-top: 2%;
     padding-left: 3%;
     font-size: 150%;
   }
